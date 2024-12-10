@@ -1,0 +1,8 @@
+.cont_imagen{
+    width: 100%;
+}
+
+
+.cont_imagen > img{
+    width: 100%;
+}
