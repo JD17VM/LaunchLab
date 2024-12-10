@@ -13,14 +13,14 @@ createRoot(document.getElementById('root')).render(
     <div class="contenido">
         <div class="seccion">
             <div class="contenido_seccion">
-                <a href="" class="cont_archivo">
+                <a href="../index.html" class="cont_archivo">
                     <img src="../static/imgs/Imagen_Archivos.PNG" alt=""/>
-                    <p>Este es un texto Este es un texto</p>
+                    <p>Launch Lab VR</p>
                 </a>
 
-                <a href="" class="cont_archivo">
+                <a href="../index2.html" class="cont_archivo">
                     <img src="../static/imgs/Imagen_Archivos.PNG" alt=""/>
-                    <p>Este es un texto Este es un texto</p>
+                    <p>Arrow Ascend</p>
                 </a>
             </div>
         </div>
