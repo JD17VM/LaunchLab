@@ -20,8 +20,8 @@ const pageData = [
         enlace_index: "../index2.html",
         enlace_documentos: "../documentos2.html",
         enlace_proceso: "../proceso2.html",
-        enlace_nosotros: "../nosotros.html",
-        enlace_proyectos: "../proyectos.html",
+        enlace_nosotros: "../nosotros2.html",
+        enlace_proyectos: "../proyectos2.html",
     },
 ];
 
