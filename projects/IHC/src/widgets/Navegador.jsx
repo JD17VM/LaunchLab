@@ -2,13 +2,11 @@ import '../assets/styles/normalize.css'
 import '../assets/styles/estilos_generales.css'
 import '../assets/styles/estilos_navegador.css'
 
-import logoIHC from '../assets/imgs/logos/Logo_IHC_Normal.png';
-import logoLaunchLab from '../assets/imgs/logos/Launch_Lab_Blanco.png';
-import logoArrowAscend from '../assets/imgs/logos/Logo_ArrowAscend_Fondo_Negro.png';
+import imageHelper from '../utils/imageHelper'
 
 const pageData = [
     { 
-        enlace_logo_proyecto: logoLaunchLab,
+        enlace_logo_proyecto: imageHelper.logo_LaunchLab_blanco,
         enlace_index: "../index.html",
         enlace_documentos: "../documentos.html",
         enlace_proceso: "../proceso.html",
@@ -16,7 +14,7 @@ const pageData = [
         enlace_proyectos: "../proyectos.html",
     },
     { 
-        enlace_logo_proyecto: logoArrowAscend,
+        enlace_logo_proyecto: imageHelper.logo_ArrowAscend_fondoNegro,
         enlace_index: "../index2.html",
         enlace_documentos: "../documentos2.html",
         enlace_proceso: "../proceso2.html",
@@ -34,7 +32,6 @@ export function Navegador (){
     } else if (currentPath === '/index2.html' || currentPath.includes('/documentos2.html') || currentPath.includes('/nosotros2.html') || currentPath.includes('/proceso2.html') || currentPath.includes('/proyectos2.html')) {
     pageDataToUse = pageData[1];
     } else {
-    // Manejar rutas no encontradas
     pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
     }
 
@@ -43,7 +40,7 @@ export function Navegador (){
             <nav id="navbar">
                 <div className="cont_logos">
                     <div className="cont_logo_general">
-                        <img src={logoIHC} alt="" />
+                        <img src={imageHelper.logo_IHC_normal} alt="" />
                     </div>
                     <div className="division"></div>
                     <a href={pageDataToUse.enlace_index} className="cont_logo_uno">

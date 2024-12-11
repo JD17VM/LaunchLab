@@ -2,12 +2,7 @@ import '../assets/styles/normalize.css'
 import '../assets/styles/estilos_generales.css'
 import '../assets/styles/estilos_footer.css'
 
-import logoComputacionFondoNegro from '../assets/imgs/logos/Logo_Computacion_Fondo_Negro.png';
-import logoUNSAFondoNegro from '../assets/imgs/logos/LOGO_UNSA_Fondo_Negro.png';
-
-import logoWhatsappBlanco from '../assets/imgs/logos/redes_sociales/logo_whatsapp_blanco.png';
-import logoFacebookBlanco from '../assets/imgs/logos/redes_sociales/logo_facebook_blanco.png';
-import logoInstagramBlanco from '../assets/imgs/logos/redes_sociales/logo_instagram_blanco.png';
+import imageHelper from '../utils/imageHelper'
 
 export function Footer (){
     return(
@@ -38,29 +33,29 @@ export function Footer (){
             </div>
             <div className="contenedor_redes_sociales">
                 <a href="" className="cont_red_social">
-                    <img src={logoInstagramBlanco} alt=""/>
+                    <img src={imageHelper.logoInstagramBlanco} alt=""/>
                     <p>/juandiegovaldiviamendoza</p>
                 </a>
                 <a href="" className="cont_red_social">
-                    <img src={logoFacebookBlanco} alt=""/>
+                    <img src={imageHelper.logoFacebookBlanco} alt=""/>
                     <p>/juandiegovaldiviamendoza</p>
                 </a>
                 <a href="" className="cont_red_social">
-                    <img src={logoFacebookBlanco} alt=""/>
+                    <img src={imageHelper.logoFacebookBlanco} alt=""/>
                     <p>/alexenriquemamani</p>
                 </a>
                 <a href="" className="cont_red_social">
-                    <img src={logoWhatsappBlanco} alt=""/>
+                    <img src={imageHelper.logoWhatsappBlanco} alt=""/>
                     <p>whatsapp/922900787</p>
                 </a>
                 <a href="" className="cont_red_social">
-                    <img src={logoWhatsappBlanco} alt=""/>
+                    <img src={imageHelper.logoWhatsappBlanco} alt=""/>
                     <p>whatsapp/925968311</p>
                 </a>
             </div>
             <div className="contenedor_logo_fecha">
-                <img src={logoUNSAFondoNegro} alt=""/>
-                <img src={logoComputacionFondoNegro} alt=""/>
+                <img src={imageHelper.logoUNSAFondoNegro} alt=""/>
+                <img src={imageHelper.logoComputacionFondoNegro} alt=""/>
                 <p>Arequipa - 2024</p>
             </div>
         </footer>
