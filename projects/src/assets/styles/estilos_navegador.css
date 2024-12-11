@@ -1,0 +1,132 @@
+html{
+    --alto_navegador : 140px;
+}
+
+nav{
+    height:var(--alto_navegador);
+    width: 100%;
+
+    box-sizing: border-box;
+    background-color: var(--color_negro);
+    display: flex;
+    align-items: center;
+    padding:0 2rem 0 1rem;
+
+    justify-content: space-between;
+    font-size: var(--fuente_tamanio_titulo_3);
+
+
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* La posiciona al inicio del scroll */
+    left: 0;
+    width: 100%; /* Se extiende a lo largo de toda la pantalla */
+    z-index: 1000; /* Asegura que esté encima del contenido */
+
+    transition: height 0.3s ease, font-size 0.3s ease; /* Transición suave */
+}
+
+nav.reducida{
+    height: 100px;
+    font-size: var(--fuente_tamanio_titulo_4);
+}
+
+.espacio_nav{
+    height: 140px;
+}
+
+    nav > .cont_logos{
+        /*background-color: yellow;*/
+        height: 60%;
+        display: flex;
+    }
+
+        nav > .cont_logos > .cont_logo_general{
+            /*background-color: blue;*/
+            aspect-ratio: 1/1;
+            height:100%;
+
+            
+        }
+
+        nav > .cont_logos> .division{
+            background-color: var(--color_blanco);
+            height: 100%;
+            width: 5px;
+            margin:0 0.6rem;
+        }
+
+
+        nav > .cont_logos > .cont_logo_uno{
+            height: 100%;
+            /*background-color: purple;*/
+        }
+
+        nav > .cont_logos img{
+            height: 100%;
+            width: auto;
+        }
+
+    nav > ul{
+        display: flex;
+        column-gap: 3.5rem;
+        font-weight: var(--fuente_semibold);
+        font-size: inherit;
+    }
+
+    nav > ul > li{
+        display: flex;
+    }
+
+        nav > ul > li > a{
+            color: var(--color_blanco);
+            position: relative;
+            font-size: inherit;
+            
+            padding: 1rem;
+            transition: background-color 0.5s ease;
+        }
+
+        nav > ul > li > a:hover{
+            background-color: var(--color_celeste_1);
+        }
+
+nav > button{
+    display: none;
+    padding: 1rem;
+    background-color: yellow;
+}
+
+
+@media only screen and (max-width: 1000px){
+    nav{
+        position: relative;
+    }
+
+        nav > ul#menu{
+            column-gap: 2rem;
+            flex-direction: column;
+            position: absolute;
+            top:var(--alto_navegador);
+            right:0;
+            height: auto;
+        }
+
+            nav > ul#menu > li{
+                width: 100%;
+            }
+
+                nav > ul#menu > li > a{
+                    width: 100%;
+                    padding: 1rem;
+                    border: 1px solid white;
+                    color: var(--color_blanco);
+                }
+
+        nav > button{
+            display: flex;
+        }
+
+    #menu{
+        display: none;
+    }
+}
