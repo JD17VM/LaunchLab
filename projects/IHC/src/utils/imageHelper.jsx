@@ -17,6 +17,9 @@ import logoWhatsappBlanco from '../assets/imgs/logos/redes_sociales/logo_whatsap
 import logoFacebookBlanco from '../assets/imgs/logos/redes_sociales/logo_facebook_blanco.png';
 import logoInstagramBlanco from '../assets/imgs/logos/redes_sociales/logo_instagram_blanco.png';
 
+import foto_JuanDiego from '../assets/imgs/Foto_JuanDiego.jpg';
+import foto_Alex from '../assets/imgs/Foto_Alex.jpg';
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -36,4 +39,7 @@ export default{
     "logoWhatsappBlanco": logoWhatsappBlanco,
     "logoFacebookBlanco": logoFacebookBlanco,
     "logoInstagramBlanco": logoInstagramBlanco,
+
+    "foto_JuanDiego": foto_JuanDiego,
+    "foto_Alex": foto_Alex,
 }

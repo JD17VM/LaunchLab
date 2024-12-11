@@ -6,3 +6,91 @@
 .cont_imagen > img{
     width: 100%;
 }
+
+:root{   
+    --fuente_regular:400;
+    --fuente_semibold:600;
+    --fuente_bold:700;
+
+    --fuente_tamanio_titulo_1:28px;
+    --fuente_tamanio_titulo_2:22px;
+    --fuente_tamanio_titulo_3:18px;
+    --fuente_tamanio_titulo_4:15px;
+
+    --color_rojo_1:#913919;
+    --color_rojo_0:#DA5625;
+    --color_rojo_-1:#E27C55;
+    --color_rojo_-2:#EAA186;
+
+    --color_caqui_1:#687756;
+    --color_caqui_0:#859870;
+    --color_caqui_-1:#A0AF90;
+    --color_caqui_-2:#C9D1BF;
+
+    --color_celeste_1:#134C49;
+    --color_celeste_0:#19625E;
+    --color_celeste_-1:#2AA7A0;
+    --color_celeste_-2:#76DCD6;
+
+    --color_azul_0:#0B1420;
+    --color_azul_-1:#26446D;
+    --color_azul_-2:#6590CA;
+
+    --color_negro:#1C1C1C;
+    --color_gris_1:#686868;
+    --color_gris_0:#B3B3B3;
+    --color_gris_-1:#DDDDDD;
+    --color_blanco:#F7F7F7;
+}
+
+
+.contenedor{
+    padding:2.5rem 0;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: var(--fuente_tamanio_titulo_3);
+}
+
+    .contenedor > .texto{
+        width: 70%;
+        margin-bottom: 3rem;
+        text-align: center;
+        line-height: 1.5rem;
+        font-weight: var(--fuente_semibold);
+        color:var(--color_blanco);
+    }
+
+    .contenedor > .cont_integrantes{
+        width:70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+
+    .contenedor > .cont_integrantes > .integrante{
+        display: flex;
+        column-gap: 1rem;
+    }
+
+        .contenedor > .cont_integrantes > .integrante > img{
+            height: 170px;
+            object-fit: cover;
+        }
+
+        .contenedor > .cont_integrantes > .integrante > div{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+
+        .contenedor > .cont_integrantes > .integrante > div > p{
+            font-weight: var(--fuente_semibold);
+            color:var(--color_blanco);
+        }
+
+
+    
