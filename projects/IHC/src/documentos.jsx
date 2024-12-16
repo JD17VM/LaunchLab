@@ -169,22 +169,6 @@ const pageData = [[
 
 ]
 
-/*
-const currentPath = window.location.pathname;
-
-var pageDataToUse = pageData[0];
-if (currentPath === '/' || currentPath === '/documentos') {
-  pageDataToUse = pageData[0]; 
-} else if (currentPath === '/documentos2') {
-  pageDataToUse = pageData[1];
-} else {
-  // Manejar rutas no encontradas
-  pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
-}
-*/
-
-
-
 export function Documentos() {
     const location = useLocation(); // Usa el hook useLocation
 

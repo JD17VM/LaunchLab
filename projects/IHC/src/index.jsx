@@ -40,8 +40,6 @@ const pageData = [
   ];
 
 
-const currentPath = window.location.pathname;
-
 export function Inicio() {
     const location = useLocation(); // Usa el hook useLocation
 

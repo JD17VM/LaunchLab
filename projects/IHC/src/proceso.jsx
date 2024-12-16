@@ -49,18 +49,6 @@ const pageData = [
     ]
   }
 ];
-/*
-const currentPath = window.location.pathname;
-
-let pageDataToUse;
-if (currentPath === '/proceso') {
-  pageDataToUse = pageData[0]; 
-} else if (currentPath === '/proceso2') {
-  pageDataToUse = pageData[1];
-} else {
-  // Manejar rutas no encontradas
-  pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
-}*/
 
 export function Proceso() {
 
