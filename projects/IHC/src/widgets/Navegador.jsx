@@ -1,5 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
+import { useLocation } from 'react-router-dom';
+
 import '../assets/styles/normalize.css'
 import '../assets/styles/estilos_generales.css'
 import '../assets/styles/estilos_navegador.css'
@@ -26,15 +28,28 @@ const pageData = [
 ];
 
 export function Navegador (){
-    const currentPath = window.location.pathname;
+    const location = useLocation(); // Usando useLocation
 
-    let pageDataToUse;
-    if (currentPath === '/' || currentPath === '/index'| currentPath.includes('/') || currentPath.includes('/nosotros') || currentPath.includes('/proceso') || currentPath.includes('/proyectos')) {
-    pageDataToUse = pageData[0]; 
-    } else if (currentPath === '/index2' || currentPath.includes('/documentos2') || currentPath.includes('/nosotros2') || currentPath.includes('/proceso2') || currentPath.includes('/proyectos2')) {
-    pageDataToUse = pageData[1];
-    } else {
-    pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
+  let pageDataToUse;
+
+  // Simplificando la lógica con un switch
+  switch (location.pathname) {
+    case '/':
+    case '/index':
+    case '/nosotros':
+    case '/proceso':
+    case '/proyectos':
+      pageDataToUse = pageData[0];
+      break;
+    case '/index2':
+    case '/documentos2':
+    case '/nosotros2':
+    case '/proceso2':
+    case '/proyectos2':
+      pageDataToUse = pageData[1];
+      break;
+      default:
+        pageDataToUse = pageData[0];
     }
 
     return(
