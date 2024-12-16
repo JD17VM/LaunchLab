@@ -1,6 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
+import { useLocation } from 'react-router-dom';
+
+
 import { Cabecera } from './widgets/Cabecera'
 import { Seccion } from './widgets/Seccion_Docs/Seccion'
 
@@ -166,7 +169,7 @@ const pageData = [[
 
 ]
 
-
+/*
 const currentPath = window.location.pathname;
 
 var pageDataToUse = pageData[0];
@@ -178,8 +181,22 @@ if (currentPath === '/' || currentPath === '/documentos') {
   // Manejar rutas no encontradas
   pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
 }
+*/
+
+
 
 export function Documentos() {
+    const location = useLocation(); // Usa el hook useLocation
+
+    let pageDataToUse;
+    if (location.pathname === '/documentos') { // Usa location.pathname
+        pageDataToUse = pageData[0];  
+    } else if (location.pathname === '/documentos2') {
+        pageDataToUse = pageData[1];
+    } else {
+        // Manejar rutas no encontradas
+        pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
+    }
     return (
     <>
         <Cabecera background_image="background_escuela.png">Documentos</Cabecera>

@@ -27,6 +27,8 @@
 \src\nosotros.jsx
 \src\proceso.jsx
 \src\proyectos.jsx
+\src\App.jsx
+\src\main.jsx
 \src\utils
 \src\widgets
 \src\assets\fonts

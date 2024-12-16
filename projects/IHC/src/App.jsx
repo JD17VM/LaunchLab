@@ -4,13 +4,13 @@ import { Footer } from './widgets/Footer'
 
 import { Inicio } from './index'
 import { Nosotros } from './nosotros'
-//import { Documentos } from './documentos'
-//import { Proceso } from './proceso'
+import { Documentos } from './documentos'
+import { Proceso } from './proceso'
 import { Proyectos } from './proyectos'
 
 
-const Documentos = () => <h1>Documentos</h1>;
-const Proceso = () => <h1>Proceso</h1>;
+//const Inicio = () => <h1>Inicio</h1>;
+//const Documentos = () => <h1>Documentos</h1>;
 
 
 

@@ -1,0 +1,395 @@
+Tengo un gran problema estoy trabajando con React y tengo un componente Navegador.jsx donde estoy manejando las Routes y luego en el archivo App.jsx estoy manejando el browse Routexs importando el Navegador. 
+
+EL tema es que dentro del src está App.jsx y tambien dentro de src hay un directorio llamado widgets que recien tiene dentro al Navegador.jsx por lo que no están dentro de la misma direccion (no sé si eso afectará y tengo que modificar como estoy manejando los paths que estoy creando).
+
+Cuando cargo esto en la navegacion de rutas algunas veces funciona correctamente con "proceso.jsx" otras veces no salta correctamente y actualizo la pagina y ahora si se muestra y así pasa en algunas partes de navegación.
+
+Cuando inicio la pagina, puedo navegar de forma correcta por todas las rutas del navegador, pero si le doy a actualizar en el agun momento y voy a la ruta de proceso, no me muestra nada, lo deja en vacío. Voy a la consola y me muestra estos errores:
+
+
+Uncaught TypeError: Cannot read properties of undefined (reading 'map')
+    at Proceso (proceso.jsx:69:38)
+    at renderWithHooks (chunk-674SED4H.js?v=50520cb2:11594:26)
+    at mountIndeterminateComponent (chunk-674SED4H.js?v=50520cb2:14972:21)
+    at beginWork (chunk-674SED4H.js?v=50520cb2:15960:22)
+    at HTMLUnknownElement.callCallback2 (chunk-674SED4H.js?v=50520cb2:3678:22)
+    at Object.invokeGuardedCallbackDev (chunk-674SED4H.js?v=50520cb2:3703:24)
+    at invokeGuardedCallback (chunk-674SED4H.js?v=50520cb2:3737:39)
+    at beginWork$1 (chunk-674SED4H.js?v=50520cb2:19816:15)
+    at performUnitOfWork (chunk-674SED4H.js?v=50520cb2:19249:20)
+    at workLoopConcurrent (chunk-674SED4H.js?v=50520cb2:19240:13)
+proceso.jsx:69 Uncaught TypeError: Cannot read properties of undefined (reading 'map')
+    at Proceso (proceso.jsx:69:38)
+    at renderWithHooks (chunk-674SED4H.js?v=50520cb2:11594:26)
+    at mountIndeterminateComponent (chunk-674SED4H.js?v=50520cb2:14972:21)
+    at beginWork (chunk-674SED4H.js?v=50520cb2:15960:22)
+    at HTMLUnknownElement.callCallback2 (chunk-674SED4H.js?v=50520cb2:3678:22)
+    at Object.invokeGuardedCallbackDev (chunk-674SED4H.js?v=50520cb2:3703:24)
+    at invokeGuardedCallback (chunk-674SED4H.js?v=50520cb2:3737:39)
+    at beginWork$1 (chunk-674SED4H.js?v=50520cb2:19816:15)
+    at performUnitOfWork (chunk-674SED4H.js?v=50520cb2:19249:20)
+    at workLoopSync (chunk-674SED4H.js?v=50520cb2:19188:13)
+hook.js:608 The above error occurred in the <Proceso> component:
+
+    at Proceso (http://localhost:5173/src/proceso.jsx?t=1734381558298:86:44)
+    at RenderedRoute (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=50520cb2:5358:26)
+    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=50520cb2:6088:3)
+    at main
+    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=50520cb2:6031:13)
+    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=50520cb2:8071:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+overrideMethod @ hook.js:608
+Show 1 more frame
+Show less
+chunk-674SED4H.js?v=50520cb2:19464 Uncaught TypeError: Cannot read properties of undefined (reading 'map')
+    at Proceso (proceso.jsx:69:38)
+    at renderWithHooks (chunk-674SED4H.js?v=50520cb2:11594:26)
+    at mountIndeterminateComponent (chunk-674SED4H.js?v=50520cb2:14972:21)
+    at beginWork (chunk-674SED4H.js?v=50520cb2:15960:22)
+    at beginWork$1 (chunk-674SED4H.js?v=50520cb2:19804:22)
+    at performUnitOfWork (chunk-674SED4H.js?v=50520cb2:19249:20)
+    at workLoopSync (chunk-674SED4H.js?v=50520cb2:19188:13)
+    at renderRootSync (chunk-674SED4H.js?v=50520cb2:19167:15)
+    at recoverFromConcurrentError (chunk-674SED4H.js?v=50520cb2:18784:28)
+    at performConcurrentWorkOnRoot (chunk-674SED4H.js?v=50520cb2:18732:30)
+
+
+Te paso el estructura del directorio del proyecto completo en Vite para que lo revises
+
+
+\.gitignore
+\dist
+\eslint.config.js
+\hola.txt
+\index.html
+\listado.txt
+\lista_archivos_y_directorios.txt
+\package-lock.json
+\package.json
+\public
+\README.md
+\src
+\vite.config.js
+\.bin
+\.cache
+\.package-lock.json
+\.vite
+\.vite-temp
+\public\assets
+\public\vite.svg
+\src\App.jsx
+\src\assets
+
+\src\main.jsx
+\src\nosotros.jsx
+\src\proceso.jsx
+\src\proyectos.jsx
+\src\utils
+\src\widgets
+\src\assets\fonts
+\src\assets\imgs
+\src\assets\js
+\src\assets\styles
+\src\assets\imgs\Arrow_Ascend
+\src\assets\imgs\backgrounds
+\src\assets\imgs\Foto_Alex.jpg
+\src\assets\imgs\Foto_JuanDiego.jpg
+\src\assets\imgs\Imagen_Archivos.PNG
+\src\assets\imgs\Imagen_Izquierda_Launch.png
+\src\assets\imgs\Launch_VR
+\src\assets\imgs\logos
+\src\assets\imgs\nosotros.png
+\src\assets\imgs\Arrow_Ascend\Grid_Capturas_Interfaz
+\src\assets\imgs\Arrow_Ascend\Proceso
+\src\assets\imgs\Arrow_Ascend\Grid_Capturas_Interfaz\image 1.png
+\src\assets\imgs\Arrow_Ascend\Grid_Capturas_Interfaz\image 2.png
+\src\assets\imgs\Arrow_Ascend\Grid_Capturas_Interfaz\image 3.png
+\src\assets\imgs\Arrow_Ascend\Grid_Capturas_Interfaz\image 4.png
+\src\assets\imgs\Arrow_Ascend\Proceso\img1.png
+\src\assets\imgs\Arrow_Ascend\Proceso\img2.jpg
+\src\assets\imgs\Arrow_Ascend\Proceso\img3.jpg
+\src\assets\imgs\backgrounds\background_escuela.png
+\src\assets\imgs\backgrounds\background_nosotros.webp
+\src\assets\imgs\backgrounds\background_proyectos.jpg
+\src\assets\imgs\Launch_VR\Grid_Capturas_Interfaz
+\src\assets\imgs\Launch_VR\Persona_con_oculus.png
+\src\assets\imgs\Launch_VR\Proceso
+\src\assets\imgs\Launch_VR\Grid_Capturas_Interfaz\image 1.png
+\src\assets\imgs\Launch_VR\Grid_Capturas_Interfaz\image 2.png
+\src\assets\imgs\Launch_VR\Grid_Capturas_Interfaz\image 3.png
+\src\assets\imgs\Launch_VR\Grid_Capturas_Interfaz\image 4.png
+\src\assets\imgs\Launch_VR\Proceso\img1.png
+\src\assets\imgs\Launch_VR\Proceso\img2.jpg
+\src\assets\imgs\Launch_VR\Proceso\img3.jpg
+\src\assets\imgs\logos\Fondo_MathCraft_Fondo_Negro.png
+\src\assets\imgs\logos\Fondo_MathCraft_Fondo_Negro_2.png
+\src\assets\imgs\logos\Launch_Lab_Blanco.png
+\src\assets\imgs\logos\Logo_ArrowAscend_Fondo_Negro.png
+\src\assets\imgs\logos\Logo_Computacion_Blanco.png
+\src\assets\imgs\logos\Logo_Computacion_Fondo_Negro.png
+\src\assets\imgs\logos\Logo_Computacion_Normal.png
+\src\assets\imgs\logos\Logo_IHC_Normal.png
+\src\assets\imgs\logos\LOGO_UNSA_Blanco.png
+\src\assets\imgs\logos\LOGO_UNSA_Fondo_Negro.png
+\src\assets\imgs\logos\LOGO_UNSA_Normal.png
+\src\assets\imgs\logos\redes_sociales
+\src\assets\imgs\logos\redes_sociales\logo_facebook_blanco.png
+\src\assets\imgs\logos\redes_sociales\logo_instagram_blanco.png
+\src\assets\imgs\logos\redes_sociales\logo_tiktok_blanco.png
+\src\assets\imgs\logos\redes_sociales\logo_whatsapp_blanco.png
+\src\assets\js\documentos.js
+\src\assets\js\index.js
+\src\assets\js\navegador.js
+\src\assets\styles\estilos_cabeceras.css
+\src\assets\styles\estilos_documento.css
+\src\assets\styles\estilos_footer.css
+\src\assets\styles\estilos_generales.css
+\src\assets\styles\estilos_index.css
+\src\assets\styles\estilos_navegador.css
+\src\assets\styles\estilos_nosotros.css
+\src\assets\styles\estilos_proceso.css
+\src\assets\styles\estilos_proyectos.css
+\src\assets\styles\normalize.css
+\src\utils\imageHelper.jsx
+\src\widgets\Cabecera.jsx
+\src\widgets\Etapa.jsx
+\src\widgets\Footer.jsx
+\src\widgets\Navegador.jsx
+\src\widgets\Seccion_Docs
+\src\widgets\Seccion_Docs\Contenido_Archivo.jsx
+\src\widgets\Seccion_Docs\Seccion.jsx
+
+Te paso el código de algunos que considero que son los importantes, si deseas que te pase de más me avisas:
+
+- App.jsx:
+
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { Navegador} from './widgets/Navegador'
+import { Footer } from './widgets/Footer'
+
+//import { Inicio } from './index'
+import { Nosotros } from './nosotros'
+//import { Documentos } from './documentos'
+import { Proceso } from './proceso'
+import { Proyectos } from './proyectos'
+
+
+const Inicio = () => <h1>Inicio</h1>;
+const Documentos = () => <h1>Documentos</h1>;
+
+
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navegador></Navegador>
+
+      <main>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/documentos" element={<Documentos />} />
+          <Route path="/proceso" element={<Proceso />} />
+          <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/proyectos" element={<Proyectos />} />
+        </Routes>
+      </main>
+
+      <Footer></Footer>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+
+- proyectos.jsx:
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+
+import './assets/styles/estilos_proyectos.css'
+
+export function Proyectos() {
+    return (
+        <>
+            <div className="contenido">
+                <div className="seccion">
+                    <div className="contenido_seccion">
+                        <a href="../index.html" className="cont_archivo">
+                            <img src="../static/imgs/Imagen_Archivos.PNG" alt="" />
+                            <p>Launch Lab VR</p>
+                        </a>
+
+                        <a href="../index2.html" className="cont_archivo">
+                            <img src="../static/imgs/Imagen_Archivos.PNG" alt="" />
+                            <p>Arrow Ascend</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+
+- nosotros.jsx
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+import { Cabecera } from './widgets/Cabecera'
+
+import './assets/styles/estilos_nosotros.css'
+
+
+import imageHelper from './utils/imageHelper'
+
+export function Nosotros() {
+  return (
+    <>
+
+      <Cabecera background_image="background_nosotros.webp">Nosotros</Cabecera>
+
+      <div className="contenedor">
+
+        <p className="texto">
+          Como estudiantes de la carrera de Ciencias de la Computación en la Universidad Nacional de San Agustín, nos encontramos profundamente interesados en el diseño y desarrollo de aplicaciones basadas en realidad virtual (VR). Este proyecto representa una oportunidad emocionante para poner en práctica nuestros conocimientos, superar desafíos tecnológicos y potenciar nuestras habilidades técnicas y creativas.
+        </p>
+
+        <div className="cont_integrantes">
+
+          <div className="integrante">
+            <img src={imageHelper.foto_JuanDiego} alt="" />
+            <div>
+              <p>Juan Diego Valdivia Mendoza</p>
+              <p>Full Stack Developer</p>
+            </div>
+          </div>
+
+          <div className="integrante">
+            <img src={imageHelper.foto_Alex} alt="" />
+            <div>
+              <p>Alex Enrique Mamani Quispe</p>
+              <p>Full Stack Developer</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </>
+  )
+
+}
+
+
+proceso.jsx
+
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+
+import { Etapa } from './widgets/Etapa'
+
+import './assets/styles/estilos_proceso.css'
+
+import imageHelper from './utils/imageHelper'
+
+const pageData = [
+  { 
+      lista_etapas: [
+        {
+          nombre : "Creacion de la idea",
+          texto : "Surge la necesidad de enseñar física de forma interactiva y divertida. Se concibe un juego de aventura con niveles que aplican conceptos como movimiento parabólico, MRUV y caída libre. Surge la necesidad de enseñar física de forma interactiva y divertida. Se concibe un juego de aventura.",
+          imagen: imageHelper.imagen_LL_proceso_1
+        },
+        {
+          nombre : "Sketching",
+          texto : "Decidimos realizar un ejercicio de sketching para nuestro proyecto con el objetivo de recopilar, explorar y analizar diversas ideas de forma colaborativa. Este enfoque nos ayudó a visualizar conceptos que, de otra manera, podrían haberse perdido en discusiones abstractas o notas textuales.",
+          imagen: imageHelper.imagen_LL_proceso_2
+        },
+        {
+          nombre : "Storyboarding",
+          texto : "A través del storyboarding, ilustramos paso a paso la historia del usuario: desde el momento en que identifica una necesidad hasta cómo intenta interactuar con el sistema para resolverla. En cada viñeta, destacamos los momentos críticos, como la confusión al navegar por una interfaz compleja, el tiempo perdido buscando una función específica o la frustración ante respuestas poco claras.",
+          imagen: imageHelper.imagen_LL_proceso_3
+        },
+        {
+          nombre : "Primera Fase",
+          texto : "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
+          imagen: ""
+        },
+      ]
+  },
+  { 
+    lista_etapas: [
+      {
+        nombre : "Creacion de la idea",
+        texto : "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
+        imagen: ""
+      },
+      {
+        nombre : "Creacion de la idea",
+        texto : "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
+        imagen: ""
+      },
+    ]
+  }
+];
+
+const currentPath = window.location.pathname;
+
+let pageDataToUse;
+if (currentPath === '/proceso') {
+  pageDataToUse = pageData[0]; 
+} else if (currentPath === '/proceso2') {
+  pageDataToUse = pageData[1];
+} else {
+  // Manejar rutas no encontradas
+  pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
+}
+
+export function Proceso() {
+  return (
+    <>
+      <div className="cont_proceso">
+        <h1>Proceso</h1>
+        {
+          pageDataToUse.lista_etapas.map((etapa, index) => (
+            <Etapa key={index} contenido={etapa.texto} enlace_imagen={etapa.imagen} >{etapa.nombre}</Etapa>
+          ))
+        }
+
+      </div>
+    </>
+  )
+}
+
+
+- widgets/Etapa.jsx:
+
+import '../assets/styles/normalize.css'
+import '../assets/styles/estilos_generales.css'
+
+export function Etapa ({children, contenido, enlace_imagen}){
+    return(
+        <div className="etapa">
+            <div className="texto">
+                <h2>{children}</h2>
+                <p>{contenido}</p>
+            </div>
+            <div className="division"></div>
+            <div className="cont_imagen">
+                <img src={enlace_imagen} alt=""/>
+            </div>
+        </div>
+    )
+}
+
+
+Te pase todo lo que considero que es informacion importante para entender, porfavor revisa todo bien completo y no hagas suposiciones y encuentra el error.
+
+Porque en el archivo proceso.jsx me da esos errores despues de actualizar la otra pagina y luego acceder a la ruta de proceso.jsx??

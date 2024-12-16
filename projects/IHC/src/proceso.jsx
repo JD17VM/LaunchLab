@@ -1,8 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { Navegador} from './widgets/Navegador'
-import { Footer } from './widgets/Footer'
+import { useLocation } from 'react-router-dom';
+
 import { Etapa } from './widgets/Etapa'
 
 import './assets/styles/estilos_proceso.css'
@@ -49,33 +49,44 @@ const pageData = [
     ]
   }
 ];
-
+/*
 const currentPath = window.location.pathname;
 
 let pageDataToUse;
-if (currentPath === '/proceso.html') {
+if (currentPath === '/proceso') {
   pageDataToUse = pageData[0]; 
-} else if (currentPath === '/proceso2.html') {
+} else if (currentPath === '/proceso2') {
   pageDataToUse = pageData[1];
 } else {
   // Manejar rutas no encontradas
   pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
+}*/
+
+export function Proceso() {
+
+  const location = useLocation(); // Usa el hook useLocation
+
+  let pageDataToUse;
+  if (location.pathname === '/proceso') { // Usa location.pathname
+    pageDataToUse = pageData[0];  
+  } else if (location.pathname === '/proceso2') {
+    pageDataToUse = pageData[1];
+  } else {
+    // Manejar rutas no encontradas
+    pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
+  }
+
+  return (
+    <>
+      <div className="cont_proceso">
+        <h1>Proceso</h1>
+        {
+          pageDataToUse.lista_etapas.map((etapa, index) => (
+            <Etapa key={index} contenido={etapa.texto} enlace_imagen={etapa.imagen} >{etapa.nombre}</Etapa>
+          ))
+        }
+
+      </div>
+    </>
+  )
 }
-
-createRoot(document.getElementById('root')).render(
-  <>
-    <Navegador></Navegador>
-
-    <div className="cont_proceso">
-      <h1>Proceso</h1>
-      {
-        pageDataToUse.lista_etapas.map((etapa, index) => ( 
-          <Etapa key={index} contenido={etapa.texto} enlace_imagen={etapa.imagen} >{etapa.nombre}</Etapa>  
-        ))
-      }
-        
-    </div>
-
-    <Footer></Footer>
-  </>
-)
