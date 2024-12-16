@@ -1,8 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { Navegador } from './widgets/Navegador'
-import { Footer } from './widgets/Footer'
 import { Cabecera } from './widgets/Cabecera'
 import { Seccion } from './widgets/Seccion_Docs/Seccion'
 
@@ -171,28 +169,31 @@ const pageData = [[
 
 const currentPath = window.location.pathname;
 
-let pageDataToUse;
-if (currentPath === '/' || currentPath === '/documentos.html') {
+var pageDataToUse = pageData[0];
+if (currentPath === '/' || currentPath === '/documentos') {
   pageDataToUse = pageData[0]; 
-} else if (currentPath === '/documentos2.html') {
+} else if (currentPath === '/documentos2') {
   pageDataToUse = pageData[1];
 } else {
   // Manejar rutas no encontradas
   pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
 }
 
-createRoot(document.getElementById('root')).render(
+export function Documentos() {
+    return (
     <>
-        <Navegador></Navegador>
         <Cabecera background_image="background_escuela.png">Documentos</Cabecera>
+
+        
 
         <div className="contenido">
             {
-                pageDataToUse.map(({ titulo, archivos }) => (
-                    <Seccion props={archivos}>{titulo}</Seccion>
+                pageDataToUse.map(({ titulo, archivos }, index) => (
+                    <Seccion key={titulo || index} props={archivos}>{titulo}</Seccion>
                 ))
             }
         </div>
+
 
         <div className="documento_especifico" id="overlay">
             <div className="contenedor">
@@ -205,6 +206,7 @@ createRoot(document.getElementById('root')).render(
             </button>
         </div>
 
-        <Footer></Footer>
     </>
 )
+
+}
