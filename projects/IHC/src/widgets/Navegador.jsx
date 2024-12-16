@@ -1,3 +1,5 @@
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+
 import '../assets/styles/normalize.css'
 import '../assets/styles/estilos_generales.css'
 import '../assets/styles/estilos_navegador.css'
@@ -7,19 +9,19 @@ import imageHelper from '../utils/imageHelper'
 const pageData = [
     { 
         enlace_logo_proyecto: imageHelper.logo_LaunchLab_blanco,
-        enlace_index: "../index.html",
-        enlace_documentos: "../documentos.html",
-        enlace_proceso: "../proceso.html",
-        enlace_nosotros: "../nosotros.html",
-        enlace_proyectos: "../proyectos.html",
+        enlace_index: "/",
+        enlace_documentos: "/documentos",
+        enlace_proceso: "/proceso",
+        enlace_nosotros: "/nosotros",
+        enlace_proyectos: "/proyectos",
     },
     { 
         enlace_logo_proyecto: imageHelper.logo_ArrowAscend_fondoNegro,
-        enlace_index: "../index2.html",
-        enlace_documentos: "../documentos2.html",
-        enlace_proceso: "../proceso2.html",
-        enlace_nosotros: "../nosotros2.html",
-        enlace_proyectos: "../proyectos2.html",
+        enlace_index: "/index2",
+        enlace_documentos: "/documentos2",
+        enlace_proceso: "/proceso2",
+        enlace_nosotros: "/nosotros2",
+        enlace_proyectos: "/proyectos2",
     },
 ];
 
@@ -27,9 +29,9 @@ export function Navegador (){
     const currentPath = window.location.pathname;
 
     let pageDataToUse;
-    if (currentPath === '/' || currentPath === '/index.html' || currentPath.includes('/documentos.html') || currentPath.includes('/nosotros.html') || currentPath.includes('/proceso.html') || currentPath.includes('/proyectos.html')) {
+    if (currentPath === '/' || currentPath === '/index'| currentPath.includes('/') || currentPath.includes('/nosotros') || currentPath.includes('/proceso') || currentPath.includes('/proyectos')) {
     pageDataToUse = pageData[0]; 
-    } else if (currentPath === '/index2.html' || currentPath.includes('/documentos2.html') || currentPath.includes('/nosotros2.html') || currentPath.includes('/proceso2.html') || currentPath.includes('/proyectos2.html')) {
+    } else if (currentPath === '/index2' || currentPath.includes('/documentos2') || currentPath.includes('/nosotros2') || currentPath.includes('/proceso2') || currentPath.includes('/proyectos2')) {
     pageDataToUse = pageData[1];
     } else {
     pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };
@@ -43,9 +45,9 @@ export function Navegador (){
                         <img src={imageHelper.logo_IHC_normal} alt="" />
                     </div>
                     <div className="division"></div>
-                    <a href={pageDataToUse.enlace_index} className="cont_logo_uno">
+                    <Link to={pageDataToUse.enlace_index} className="cont_logo_uno">
                         <img src={pageDataToUse.enlace_logo_proyecto} alt="" />
-                    </a>
+                    </Link>
                 </div>
                 
                 <button id="boton_hamburguesa">
@@ -54,10 +56,10 @@ export function Navegador (){
                     </span>
                 </button>
                 <ul id="menu">
-                    <li><a href={pageDataToUse.enlace_documentos}>Documentos</a></li>
-                    <li><a href={pageDataToUse.enlace_proceso}>Proceso</a></li>
-                    <li><a href={pageDataToUse.enlace_nosotros}>Nosotros</a></li>
-                    <li><a href={pageDataToUse.enlace_proyectos}>Proyectos</a></li>
+                    <li><Link to={pageDataToUse.enlace_documentos}>Documentos</Link></li>
+                    <li><Link to={pageDataToUse.enlace_proceso}>Proceso</Link></li>
+                    <li><Link to={pageDataToUse.enlace_nosotros}>Nosotros</Link></li>
+                    <li><Link to={pageDataToUse.enlace_proyectos}>Proyectos</Link></li>
                 </ul>
             </nav>
             <div className="espacio_nav"></div>
