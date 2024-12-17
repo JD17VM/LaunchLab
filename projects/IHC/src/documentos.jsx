@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { Cabecera } from './widgets/Cabecera'
 import { Seccion } from './widgets/Seccion_Docs/Seccion'
 
-import './assets/styles/estilos_documento.css'
+import styles from './assets/styles/estilos_documento.module.css'
 
 const pageData = [[
     {
@@ -187,7 +187,7 @@ export function Documentos() {
 
         
 
-        <div className="contenido">
+        <div className={styles.contenido}>
             {
                 pageDataToUse.map(({ titulo, archivos }, index) => (
                     <Seccion key={titulo || index} props={archivos}>{titulo}</Seccion>
@@ -196,12 +196,12 @@ export function Documentos() {
         </div>
 
 
-        <div className="documento_especifico" id="overlay">
-            <div className="contenedor">
+        <div className={styles.documento_especifico} id="overlay">
+            <div className={styles.contenedor}>
                 <img src="" alt="" id="selectedImage" />
             </div>
             <button id="button_cerrar">
-                <span className="material-symbols-outlined">
+                <span className={styles['material-symbols-outlined']}>
                     close
                 </span>
             </button>
