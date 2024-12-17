@@ -61,9 +61,32 @@ export function Navegador (){
         setActiveLink(location.pathname);
       }, [location.pathname]); // Dependencia en location.pathname para que se ejecute cuando cambia
 
+
+      const [scrolling, setScrolling] = useState(false);
+
+      useEffect(() => {
+        // Función para manejar el evento de scroll
+        const handleScroll = () => {
+          if (window.scrollY > 80) {
+            setScrolling(true); // Cambiar el estado si se pasa el umbral
+          } else {
+            setScrolling(false); // Si no, poner el estado como false
+          }
+        };
+    
+        // Añadir el evento de scroll
+        window.addEventListener('scroll', handleScroll);
+    
+        // Limpiar el evento cuando el componente se desmonte
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []); // El efecto solo se ejecuta una vez al montar el componente
+    
+
     return(
         <>
-            <nav id="navbar">
+            <nav id="navbar" className={scrolling ? styles['reducida'] : ''}>
                 <div className={styles.cont_logos}>
                     <div className={styles.cont_logo_general}>
                         <img src={imageHelper.logo_IHC_normal} alt="" />
