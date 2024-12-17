@@ -1,13 +1,13 @@
 import '../assets/styles/normalize.css'
 import '../assets/styles/estilos_generales.css'
-import '../assets/styles/estilos_footer.css'
+import styles from '../assets/styles/estilos_footer.module.css'
 
 import imageHelper from '../utils/imageHelper'
 
 export function Footer (){
     return(
         <footer>
-            <div className="contenedor_politicas">
+            <div className={styles.contenedor_politicas}>
                 <ul>
                     <li><a href="">Corporación</a></li>
                     <li><a href="">Privacidad</a></li>
@@ -16,7 +16,7 @@ export function Footer (){
                     <li><a href="">Aviso Legal</a></li>
                 </ul>
             </div>
-            <div className="contenedor_contacto">
+            <div className={styles.contenedor_contacto}>
                 <div>
                     <h3>Correo electrónico personal:</h3>
                     <ul>
@@ -31,29 +31,29 @@ export function Footer (){
                     </ul>
                 </div>
             </div>
-            <div className="contenedor_redes_sociales">
-                <a href="" className="cont_red_social">
+            <div className={styles.contenedor_redes_sociales}>
+                <a href="" className={styles.cont_red_social}>
                     <img src={imageHelper.logoInstagramBlanco} alt=""/>
                     <p>/juandiegovaldiviamendoza</p>
                 </a>
-                <a href="" className="cont_red_social">
+                <a href="" className={styles.cont_red_social}>
                     <img src={imageHelper.logoFacebookBlanco} alt=""/>
                     <p>/juandiegovaldiviamendoza</p>
                 </a>
-                <a href="" className="cont_red_social">
+                <a href="" className={styles.cont_red_social}>
                     <img src={imageHelper.logoFacebookBlanco} alt=""/>
                     <p>/alexenriquemamani</p>
                 </a>
-                <a href="" className="cont_red_social">
+                <a href="" className={styles.cont_red_social}>
                     <img src={imageHelper.logoWhatsappBlanco} alt=""/>
                     <p>whatsapp/922900787</p>
                 </a>
-                <a href="" className="cont_red_social">
+                <a href="" className={styles.cont_red_social}>
                     <img src={imageHelper.logoWhatsappBlanco} alt=""/>
                     <p>whatsapp/925968311</p>
                 </a>
             </div>
-            <div className="contenedor_logo_fecha">
+            <div className={styles.contenedor_logo_fecha}>
                 <img src={imageHelper.logoUNSAFondoNegro} alt=""/>
                 <img src={imageHelper.logoComputacionFondoNegro} alt=""/>
                 <p>Arequipa - 2024</p>
