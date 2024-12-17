@@ -3,9 +3,7 @@ import { createRoot } from 'react-dom/client'
 
 import { useLocation } from 'react-router-dom';
 
-import { Etapa } from './widgets/Etapa'
-
-import './assets/styles/estilos_proceso.css'
+import styles from './assets/styles/estilos_proceso.module.css'
 
 import imageHelper from './utils/imageHelper'
 
@@ -50,6 +48,22 @@ const pageData = [
   }
 ];
 
+function Etapa ({children, contenido, enlace_imagen}){
+  return(
+      <div className={styles.etapa}>
+          <div className={styles.texto}>
+              <h2>{children}</h2>
+              <p>{contenido}</p>
+          </div>
+          <div className={styles.division}></div>
+          <div className={styles.cont_imagen}>
+              <img src={enlace_imagen} alt=""/>
+          </div>
+      </div>
+  )
+}
+
+
 export function Proceso() {
 
   const location = useLocation(); // Usa el hook useLocation
@@ -66,7 +80,7 @@ export function Proceso() {
 
   return (
     <>
-      <div className="cont_proceso">
+      <div className={styles.cont_proceso}>
         <h1>Proceso</h1>
         {
           pageDataToUse.lista_etapas.map((etapa, index) => (
