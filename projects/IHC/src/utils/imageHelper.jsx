@@ -22,6 +22,11 @@ import foto_Alex from '../assets/imgs/Foto_Alex.jpg';
 
 import Rating_12 from '../assets/imgs/rating/R_12.png';
 
+import imagen_LL_index from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
+
+import background_image_AA from '../assets/imgs/Arrow_Ascend/Background_Total.png'
+import background_image_LL from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -46,4 +51,6 @@ export default{
     "foto_Alex": foto_Alex,
 
     "Rating_12": Rating_12,
+
+    "imagen_LL_index": imagen_LL_index,
 }

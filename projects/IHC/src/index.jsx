@@ -64,7 +64,7 @@ export function Inicio() {
                     <p>{pageDataToUse.texto_titulo}</p>
                 </div>
                 <div className={styles.cont_imagen}>
-                    <img src="./assets/imgs/Persona_con_oculus.png" alt="" />
+                    <img src={imageHelper.imagen_LL_index} alt="" />
                 </div>
             </div>
 

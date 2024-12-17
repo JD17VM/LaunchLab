@@ -44,6 +44,8 @@ export function Navegador (){
         case '/proceso':
         case '/proyectos':
             pageDataToUse = pageData[0];
+            document.body.classList.remove('bg_AA');
+            document.body.classList.add('bg_LL');
             break;
         case '/index2':
         case '/documentos2':
@@ -51,6 +53,8 @@ export function Navegador (){
         case '/proceso2':
         case '/proyectos2':
             pageDataToUse = pageData[1];
+            document.body.classList.remove('bg_LL');
+            document.body.classList.add('bg_AA');
             break;
         default:
             pageDataToUse = pageData[0];

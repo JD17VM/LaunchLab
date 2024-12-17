@@ -57,5 +57,13 @@ body{
 
 body {
     background-color: #131313;
-    background-image: url('../imgs/Logos/Fondo_MathCraft_Fondo_Negro_2.png'); /* Imagen de fondo */
+}
+
+body.bg_AA{
+    background-image: url('../imgs/Arrow_Ascend/Background_Total.png'); /* Imagen de fondo */
+}
+
+
+body.bg_LL{
+    background-image: url('../imgs/Launch_VR/Background_Total.png'); /* Imagen de fondo */
 }
