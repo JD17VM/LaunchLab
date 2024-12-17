@@ -103,10 +103,10 @@ export function Navegador (){
                     </span>
                 </button>
                 <ul id="menu">
-                    <li><Link to={pageDataToUse.enlace_documentos} className={activeLink === '/documentos' ? styles['active'] : ''}>Documentos</Link></li>
-                    <li><Link to={pageDataToUse.enlace_proceso} className={activeLink === '/proceso' ? styles['active'] : ''}>Proceso</Link></li>
-                    <li><Link to={pageDataToUse.enlace_nosotros} className={activeLink === '/nosotros' ? styles['active'] : ''}>Nosotros</Link></li>
-                    <li><Link to={pageDataToUse.enlace_proyectos} className={activeLink === '/proyectos' ? styles['active'] : ''}>Proyectos</Link></li>
+                    <li><Link to={pageDataToUse.enlace_documentos} className={activeLink === '/documentos' || activeLink === '/documentos2' ? styles['active'] : ''}>Documentos</Link></li>
+                    <li><Link to={pageDataToUse.enlace_proceso} className={activeLink === '/proceso' || activeLink === '/proceso2' ? styles['active'] : ''}>Proceso</Link></li>
+                    <li><Link to={pageDataToUse.enlace_nosotros} className={activeLink === '/nosotros' || activeLink === '/nosotros2' ? styles['active'] : ''}>Nosotros</Link></li>
+                    <li><Link to={pageDataToUse.enlace_proyectos} className={activeLink === '/proyectos' || activeLink === '/proyectos2' ? styles['active'] : ''}>Proyectos</Link></li>
                 </ul>
             </nav>
             <div className={styles.espacio_nav}></div>

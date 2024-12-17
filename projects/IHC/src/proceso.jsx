@@ -7,6 +7,8 @@ import styles from './assets/styles/estilos_proceso.module.css'
 
 import imageHelper from './utils/imageHelper'
 
+import { Cabecera } from './widgets/Cabecera'
+
 const pageData = [
   { 
       lista_etapas: [
@@ -80,8 +82,8 @@ export function Proceso() {
 
   return (
     <>
+      <Cabecera background_image="background_proceso.webp">Proceso</Cabecera>
       <div className={styles.cont_proceso}>
-        <h1>Proceso</h1>
         {
           pageDataToUse.lista_etapas.map((etapa, index) => (
             <Etapa key={index} contenido={etapa.texto} enlace_imagen={etapa.imagen} >{etapa.nombre}</Etapa>
