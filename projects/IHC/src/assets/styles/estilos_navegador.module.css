@@ -90,6 +90,15 @@ nav.reducida{
             background-color: var(--color_celeste_1);
         }
 
+
+        nav > ul > li > a.active{
+            color: var(--color_rojo_-1);
+        }
+
+        nav > ul > li > a.active:hover{
+            background-color: transparent;
+        }
+
 nav > button{
     display: none;
     padding: 1rem;

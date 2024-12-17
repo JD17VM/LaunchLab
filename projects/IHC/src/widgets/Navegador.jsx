@@ -1,4 +1,5 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from "react"
 
 import { useLocation } from 'react-router-dom';
 
@@ -30,27 +31,35 @@ const pageData = [
 export function Navegador (){
     const location = useLocation(); // Usando useLocation
 
-  let pageDataToUse;
+    const [activeLink, setActiveLink] = useState('');
 
-  // Simplificando la lógica con un switch
-  switch (location.pathname) {
-    case '/':
-    case '/index':
-    case '/nosotros':
-    case '/proceso':
-    case '/proyectos':
-      pageDataToUse = pageData[0];
-      break;
-    case '/index2':
-    case '/documentos2':
-    case '/nosotros2':
-    case '/proceso2':
-    case '/proyectos2':
-      pageDataToUse = pageData[1];
-      break;
-      default:
-        pageDataToUse = pageData[0];
+
+    let pageDataToUse;
+
+    // Simplificando la lógica con un switch
+    switch (location.pathname) {
+        case '/':
+        case '/index': 
+        case '/nosotros':
+        case '/proceso':
+        case '/proyectos':
+            pageDataToUse = pageData[0];
+            break;
+        case '/index2':
+        case '/documentos2':
+        case '/nosotros2':
+        case '/proceso2':
+        case '/proyectos2':
+            pageDataToUse = pageData[1];
+            break;
+        default:
+            pageDataToUse = pageData[0];
     }
+
+    useEffect(() => {
+        // Se actualiza el estado cuando cambia la ubicación (pathname)
+        setActiveLink(location.pathname);
+      }, [location.pathname]); // Dependencia en location.pathname para que se ejecute cuando cambia
 
     return(
         <>
@@ -71,10 +80,10 @@ export function Navegador (){
                     </span>
                 </button>
                 <ul id="menu">
-                    <li><Link to={pageDataToUse.enlace_documentos}>Documentos</Link></li>
-                    <li><Link to={pageDataToUse.enlace_proceso}>Proceso</Link></li>
-                    <li><Link to={pageDataToUse.enlace_nosotros}>Nosotros</Link></li>
-                    <li><Link to={pageDataToUse.enlace_proyectos}>Proyectos</Link></li>
+                    <li><Link to={pageDataToUse.enlace_documentos} className={activeLink === '/documentos' ? styles['active'] : ''}>Documentos</Link></li>
+                    <li><Link to={pageDataToUse.enlace_proceso} className={activeLink === '/proceso' ? styles['active'] : ''}>Proceso</Link></li>
+                    <li><Link to={pageDataToUse.enlace_nosotros} className={activeLink === '/nosotros' ? styles['active'] : ''}>Nosotros</Link></li>
+                    <li><Link to={pageDataToUse.enlace_proyectos} className={activeLink === '/proyectos' ? styles['active'] : ''}>Proyectos</Link></li>
                 </ul>
             </nav>
             <div className={styles.espacio_nav}></div>
