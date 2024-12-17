@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 
 import '../assets/styles/normalize.css'
 import '../assets/styles/estilos_generales.css'
-import '../assets/styles/estilos_navegador.css'
+import styles from '../assets/styles/estilos_navegador.module.css'
 
 import imageHelper from '../utils/imageHelper'
 
@@ -55,18 +55,18 @@ export function Navegador (){
     return(
         <>
             <nav id="navbar">
-                <div className="cont_logos">
-                    <div className="cont_logo_general">
+                <div className={styles.cont_logos}>
+                    <div className={styles.cont_logo_general}>
                         <img src={imageHelper.logo_IHC_normal} alt="" />
                     </div>
-                    <div className="division"></div>
-                    <Link to={pageDataToUse.enlace_index} className="cont_logo_uno">
+                    <div className={styles.division}></div>
+                    <Link to={pageDataToUse.enlace_index} className={styles.cont_logo_uno}>
                         <img src={pageDataToUse.enlace_logo_proyecto} alt="" />
                     </Link>
                 </div>
                 
                 <button id="boton_hamburguesa">
-                    <span className="material-symbols-outlined">
+                    <span className={styles['material-symbols-outlined']}>
                         menu
                     </span>
                 </button>
@@ -77,7 +77,7 @@ export function Navegador (){
                     <li><Link to={pageDataToUse.enlace_proyectos}>Proyectos</Link></li>
                 </ul>
             </nav>
-            <div className="espacio_nav"></div>
+            <div className={styles.espacio_nav}></div>
         </>
     )
 }
