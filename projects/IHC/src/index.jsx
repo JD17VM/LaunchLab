@@ -5,6 +5,8 @@ import styles from './assets/styles/estilos_index.module.css'
 
 import { useLocation } from 'react-router-dom';
 
+import imageHelper from './utils/imageHelper'
+
 
 const pageData = [
     { 
@@ -105,7 +107,7 @@ export function Inicio() {
 
                         <h3>Lanzamiento:</h3> <p>04 de noviembre 2024</p>
 
-                        <h3>Rating:</h3> <p>Alex Enrique Mamani, Juan Diego Valdivia Mendoza</p>
+                        <h3>Rating:</h3> <div><img src={imageHelper.Rating_12} alt="" /></div>
                     </div>
 
                 </div>

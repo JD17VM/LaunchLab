@@ -20,6 +20,8 @@ import logoInstagramBlanco from '../assets/imgs/logos/redes_sociales/logo_instag
 import foto_JuanDiego from '../assets/imgs/Foto_JuanDiego.jpg';
 import foto_Alex from '../assets/imgs/Foto_Alex.jpg';
 
+import Rating_12 from '../assets/imgs/rating/R_12.png';
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -42,4 +44,6 @@ export default{
 
     "foto_JuanDiego": foto_JuanDiego,
     "foto_Alex": foto_Alex,
+
+    "Rating_12": Rating_12,
 }

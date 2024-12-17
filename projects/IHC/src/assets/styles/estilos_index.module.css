@@ -153,3 +153,13 @@
             font-size: var(--fuente_tamanio_titulo_3);
             color: var(--color_blanco);
         }
+
+        .contenedor_info > .informacion > .cont_datos > div{
+            
+            height: 3.5rem;
+            display: flex;
+        }
+
+        .contenedor_info > .informacion > .cont_datos > div > img{
+            height: 100%;
+        }
