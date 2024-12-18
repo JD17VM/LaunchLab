@@ -8,8 +8,8 @@ export function Seccion ({props,children}){
             <h2>{children}</h2>
             <div className={styles.contenido_seccion}>
                 {
-                    props.map(({nombre, enlace}, index) => (
-                        <Contenido_Archivo key={index} enlace={enlace}>{nombre}</Contenido_Archivo>
+                    props.map(({nombre, enlace, imagen}, index) => (
+                        <Contenido_Archivo key={index} enlace={enlace} img={imagen}>{nombre}</Contenido_Archivo>
                     ))
                 }
             </div>
