@@ -27,6 +27,8 @@ import imagen_LL_index from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
 import background_image_AA from '../assets/imgs/Arrow_Ascend/Background_Total.png'
 import background_image_LL from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
 
+import image_default from '../assets/imgs/Image_Default.png'
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -53,4 +55,6 @@ export default{
     "Rating_12": Rating_12,
 
     "imagen_LL_index": imagen_LL_index,
+
+    "image_default": image_default,
 }

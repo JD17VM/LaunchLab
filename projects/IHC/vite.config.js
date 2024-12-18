@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   plugins: [react()],
   //base: '/',
-  base: 'https://jd17vm.github.io/LaunchLab',
+  //base: 'https://jd17vm.github.io/LaunchLab',
 })
