@@ -19,7 +19,7 @@ const pageData = [[
             {
                 nombre: "Nombre Archivo 1",
                 enlace: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: imageHelper.Image_default
             },
             {
                 nombre: "Nombre Archivo 2",
@@ -44,12 +44,12 @@ const pageData = [[
             {
                 nombre: "Nombre Archivo 1",
                 enlace: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: imageHelper.Image_default
             },
             {
                 nombre: "Nombre Archivo 2",
                 enlace: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: imageHelper.PDF_default
             },
         ]
     },
