@@ -29,12 +29,12 @@ const pageData = [[
             {
                 nombre: "Nombre Archivo 3",
                 enlace: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
             },
             {
                 nombre: "Nombre Archivo 4",
                 enlace: "enlace 4",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "https://github.com/JD17VM/LaunchLab/blob/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
             },
         ]
     },
