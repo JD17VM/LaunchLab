@@ -77,7 +77,7 @@ export function Inicio() {
                             <p>Probar Ahora</p>
                         </a>
                         <div className={styles.cont_imagen}>
-                            <img src="" alt="" />
+                            <img src={imageHelper.imagen_LL_index} alt="" />
                         </div>
                     </div>
                 </div>
@@ -86,16 +86,16 @@ export function Inicio() {
                     <h2>Capturas</h2>
                     <div className={styles.grid_imgs}>
                         <div className={styles.cont_imagen}>
-                            <img src="" alt="" />
+                            <img src={imageHelper.imagen_LL_index} alt="" />
                         </div>
                         <div className={styles.cont_imagen}>
-                            <img src="" alt="" />
+                            <img src={imageHelper.imagen_LL_index} alt="" />
                         </div>
                         <div className={styles.cont_imagen}>
-                            <img src="" alt="" />
+                            <img src={imageHelper.imagen_LL_index} alt="" />
                         </div>
                         <div className={styles.cont_imagen}>
-                            <img src="" alt="" />
+                            <img src={imageHelper.imagen_LL_index} alt="" />
                         </div>
                     </div>
 
