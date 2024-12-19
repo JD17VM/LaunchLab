@@ -37,7 +37,7 @@ export function Inicio() {
                     <p>{pageDataToUse.texto_titulo}</p>
                 </div>
                 <div className={styles.cont_imagen}>
-                    <img src={imageHelper.imagen_LL_index} alt="" />
+                    <img src={pageDataToUse.enlace_imagen_principal} alt="" />
                 </div>
             </div>
 

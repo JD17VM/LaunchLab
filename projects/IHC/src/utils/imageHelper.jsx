@@ -23,6 +23,7 @@ import foto_Alex from '../assets/imgs/Foto_Alex.jpg';
 import Rating_12 from '../assets/imgs/rating/R_12.png';
 
 import imagen_LL_index from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
+import imagen_AA_index from '../assets/imgs/Launch_VR/Persona_con_arco.png'
 
 import background_image_AA from '../assets/imgs/Arrow_Ascend/Background_Total.png'
 import background_image_LL from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
@@ -76,7 +77,8 @@ export default{
     "Rating_12": Rating_12,
 
     "imagen_LL_index": imagen_LL_index,
-
+    "imagen_AA_index": imagen_AA_index,
+    
     "Image_default": Image_default,
     "PDF_default": PDF_default,
     "Video_default": Video_default,
@@ -96,4 +98,5 @@ export default{
 
     "capturas_grid_AA_1": capturas_grid_AA_1,
     "capturas_grid_AA_2": capturas_grid_AA_2,
+
 }
