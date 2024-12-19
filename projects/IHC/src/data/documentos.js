@@ -11,8 +11,8 @@ const pageData = [[
             {
                 id: 1,
                 nombre: "Persona Alexis",
-                enlace_doc: `${path_imgs}/Persona_Alexis.png`,
-                imagen: `${path_imgs}/Persona_Alexis.png`,
+                enlace_doc: `Persona_Alexis.png`,
+                imagen: `Persona_Alexis.png`,
                 tipo: "imagen"
             },
             {

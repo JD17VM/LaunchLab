@@ -34,7 +34,7 @@ export function Contenido_Archivo ({children, img, enlace_doc, id, id_seccion, t
     return(
         <Link to={`${location.pathname}/${id_seccion}/${id}`} className={styles.cont_archivo}>
             <img 
-                src={img} 
+                src={`https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Documentos/${img}`} 
                 alt={children} 
             />
             <p>{children}</p>

@@ -64,7 +64,7 @@ const ItemPage = () => {
 
   return (
     <div className={styles.contenedor}>
-      <h1>{seccion.titulo} - {archivo.enlace_doc}</h1>
+      <h1>{seccion.titulo} - {archivo.nombre}</h1>
       <div>
         <Link 
         to={`${enlace_principal}/${id_seccion}/${parseInt(id) - 1}`} 
