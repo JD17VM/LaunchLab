@@ -15,7 +15,7 @@ export function Nosotros() {
   return (
     <>
 
-      <Cabecera background_image="background_nosotros.webp">Nosotros</Cabecera>
+      <Cabecera background_image={imageHelper.background_cabecera_nosotros}>Nosotros</Cabecera>
 
       <div className={styles.contenedor}>
 

@@ -1,24 +1,26 @@
 import imageHelper from '../utils/imageHelper'
 
 
+const path_imgs = "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Documentos"
+
 const pageData = [[
     {
         id_seccion: 1,
-        titulo: "Documentos 1",
+        titulo: "Personas",
         archivos: [
             {
                 id: 1,
-                nombre: "Nombre Archivo 1",
-                enlace_doc: "enlace 1",
-                imagen: "",
+                nombre: "Persona Alexis",
+                enlace_doc: `${path_imgs}/Persona_Alexis.png`,
+                imagen: `${path_imgs}/Persona_Alexis.png`,
                 tipo: "imagen"
             },
             {
                 id: 2,
-                nombre: "Nombre Archivo 2",
-                enlace_doc: "enlace 2",
+                nombre: "Entrevista Alexis",
+                enlace_doc: "1jNpAW9ZsP1g_FfMNjQ6RaJSEJVlFvswE",
                 imagen: "",
-                tipo: "pdf"
+                tipo: "video"
             },
             {
                 id: 3,

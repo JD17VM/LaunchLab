@@ -34,6 +34,11 @@ import Video_default from '../assets/imgs/Video_Default.png'
 import background_image_AA_proyecto from '../assets/imgs/imagen_fondo_AA.png'
 import background_image_LL_proyecto from '../assets/imgs/imagen_fondo_LL.png'
 
+import background_cabecera_documentos from '../assets/imgs/backgrounds/background_escuela.png'
+import background_cabecera_proceso from '../assets/imgs/backgrounds/background_proceso.webp'
+import background_cabecera_nosotros from '../assets/imgs/backgrounds/background_nosotros.webp'
+import background_cabecera_proyectos from '../assets/imgs/backgrounds/background_proyectos.jpg'
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -67,4 +72,9 @@ export default{
 
     "background_image_AA_proyecto": background_image_AA_proyecto,
     "background_image_LL_proyecto": background_image_LL_proyecto,
+
+    "background_cabecera_documentos": background_cabecera_documentos,
+    "background_cabecera_proceso": background_cabecera_proceso,
+    "background_cabecera_nosotros": background_cabecera_nosotros,
+    "background_cabecera_proyectos": background_cabecera_proyectos,
 }

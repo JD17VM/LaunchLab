@@ -14,7 +14,7 @@ export function Proyectos() {
       }, []);
     return (
         <>
-            <Cabecera background_image="s.webp">Proyectos</Cabecera>
+            <Cabecera background_image={imageHelper.background_cabecera_proyectos}>Proyectos</Cabecera>
             <div className={styles.contenido}>
                 <div className={styles.seccion}>
                     <div className={styles.contenido_seccion}>

@@ -11,6 +11,8 @@ import styles from './assets/styles/estilos_documento.module.css'
 import { useEffect } from 'react';
 import pageData from './data/documentos';
 
+import imageHelper from './utils/imageHelper'
+
 export function Documentos() {
 
     useEffect(() => {
@@ -30,7 +32,7 @@ export function Documentos() {
     }
     return (
     <>
-        <Cabecera background_image="background_escuela.png">Documentos</Cabecera>
+        <Cabecera background_image={imageHelper.background_cabecera_documentos}>Documentos</Cabecera>
 
         
 

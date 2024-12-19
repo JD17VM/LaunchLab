@@ -49,7 +49,7 @@ export function Proceso() {
 
   return (
     <>
-      <Cabecera background_image="background_proceso.webp">Proceso</Cabecera>
+      <Cabecera background_image={imageHelper.background_cabecera_proceso}>Proceso</Cabecera>
       <div className={styles.cont_proceso}>
         {
           pageDataToUse.lista_etapas.map((etapa, index) => (
