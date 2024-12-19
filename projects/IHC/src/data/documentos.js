@@ -24,17 +24,31 @@ const pageData = [[
             },
             {
                 id: 3,
-                nombre: "Nombre Archivo 3",
-                enlace_doc: "10JgPF4qazbrkDK4DLRIB620YBEdWe3ox",
-                imagen: "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg",
-                tipo: "video"
+                nombre: "Persona Karol",
+                enlace_doc: "Persona_Karol.png",
+                imagen: "Persona_Karol.png",
+                tipo: "imagen"
             },
             {
                 id: 4,
-                nombre: "Nombre Archivo 4",
-                enlace_doc: "enlace 4",
+                nombre: "Entrevista Karol",
+                enlace_doc: "1eskQNS6IE6_Jm1FEbZsMBYR2BLKF7gYX",
                 imagen: "",
-                tipo: "pdf"
+                tipo: "video"
+            },
+            {
+                id: 5,
+                nombre: "Persona Brenda",
+                enlace_doc: "Persona_Brenda.png",
+                imagen: "Persona_Brenda.png",
+                tipo: "imagen"
+            },
+            {
+                id: 6,
+                nombre: "Entrevista Brenda",
+                enlace_doc: "1eskQNS6IE6_Jm1FEbZsMBYR2BLKF7gYX",
+                imagen: "",
+                tipo: "video"
             },
         ]
     },
