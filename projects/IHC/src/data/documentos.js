@@ -32,7 +32,7 @@ const pageData = [[
             {
                 id: 4,
                 nombre: "Entrevista Karol",
-                enlace_doc: "1eskQNS6IE6_Jm1FEbZsMBYR2BLKF7gYX",
+                enlace_doc: "1zHFy8TzBGFkQ2dqzZMer_Rfe4Uf1vCql",
                 imagen: "",
                 tipo: "video"
             },
@@ -46,7 +46,7 @@ const pageData = [[
             {
                 id: 6,
                 nombre: "Entrevista Brenda",
-                enlace_doc: "1zHFy8TzBGFkQ2dqzZMer_Rfe4Uf1vCql",
+                enlace_doc: "17sSmdeDyOUKCZusEa6Ys4mytGDP4PxcM",
                 imagen: "",
                 tipo: "video"
             },
