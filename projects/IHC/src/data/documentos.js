@@ -87,28 +87,28 @@ const pageData = [[
                 id: 1,
                 nombre: "Prototipo 1",
                 enlace_doc: "Prototipo_BF_1.jpg",
-                imagen: "",
+                imagen: "Prototipo_BF_1.jpg",
                 tipo: "imagen"
             },
             {
                 id: 2,
                 nombre: "Prototipo 2",
                 enlace_doc: "Prototipo_BF_2.jpg",
-                imagen: "",
+                imagen: "Prototipo_BF_2.jpg",
                 tipo: "imagen"
             },
             {
                 id: 3,
                 nombre: "Prototipo 3",
                 enlace_doc: "Prototipo_BF_3.jpg",
-                imagen: "",
+                imagen: "Prototipo_BF_3.jpg",
                 tipo: "imagen"
             },
             {
                 id: 4,
                 nombre: "Prototipo 4",
                 enlace_doc: "Prototipo_BF_4.jpg",
-                imagen: "",
+                imagen: "Prototipo_BF_4.jpg",
                 tipo: "imagen"
             },
             {

@@ -43,19 +43,6 @@ export function Documentos() {
                 ))
             }
         </div>
-
-
-        <div className={styles.documento_especifico} id="overlay">
-            <div className={styles.contenedor}>
-                <img src="" alt="" id="selectedImage" />
-            </div>
-            <button id="button_cerrar">
-                <span className={styles['material-symbols-outlined']}>
-                    close
-                </span>
-            </button>
-        </div>
-
     </>
 )
 
