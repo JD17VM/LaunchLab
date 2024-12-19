@@ -57,11 +57,25 @@ const pageData = [[
         titulo: "Needfinding",
         archivos: [
             {
-                id: 7,
+                id: 1,
                 nombre: "Needfinding Presentación",
                 enlace_doc: "15oHKDwA0ID-uiCOaG6TVkYbxb6Dp8Bcd",
                 imagen: "",
                 tipo: "pdf"
+            },
+            {
+                id: 2,
+                nombre: "Entrevista 1",
+                enlace_doc: "1K5uS9wv2NiKFQX9Y16qPftBbteMQxkCS",
+                imagen: "",
+                tipo: "video"
+            },
+            {
+                id: 3,
+                nombre: "Entrevista 2",
+                enlace_doc: "1gMTeWWubrPlv6Nc7_49IeXTvAsDzXFOX",
+                imagen: "",
+                tipo: "video"
             },
         ]
     },
@@ -108,28 +122,21 @@ const pageData = [[
     },
     {
         id_seccion: 4,
-        titulo: "Documento 4",
+        titulo: "Probando Juego",
         archivos: [
             {
-                id: 12,
-                nombre: "Nombre Archivo 1",
-                enlace_doc: "enlace 1",
+                id: 1,
+                nombre: "Usuario 1",
+                enlace_doc: "1A1VZUxcFZdfg6AbE0W6WGRLvX6vhagKD",
                 imagen: "",
-                tipo: "imagen"
+                tipo: "video"
             },
             {
-                id: 13,
-                nombre: "Nombre Archivo 2",
-                enlace_doc: "enlace 2",
+                id: 2,
+                nombre: "Usuario 2",
+                enlace_doc: "1mnKYtANuDgTqBeOHkJpELDyLPrANQQ0o",
                 imagen: "",
-                tipo: "imagen"
-            },
-            {
-                id: 14,
-                nombre: "Nombre Archivo 3",
-                enlace_doc: "enlace 3",
-                imagen: "",
-                tipo: "imagen"
+                tipo: "video"
             },
         ]
     },
