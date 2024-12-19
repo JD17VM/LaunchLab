@@ -50,7 +50,7 @@ const ItemPage = () => {
   let content;
 
   if (archivo.tipo === "imagen") {
-    content = <img src={`https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/${archivo.enlace_doc}`} alt="Descripción de la imagen" />;
+    content = <img src={`https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Documentos/${archivo.enlace_doc}`} alt="Descripción de la imagen" />;
   } else if (archivo.tipo === "pdf"){
     content = <iframe src={`https://drive.google.com/file/d/${archivo.enlace_doc}/preview`}  allow="autoplay" className={styles.iframe_pdf_drive}></iframe>;
   } else if (archivo.tipo === "video"){
@@ -66,7 +66,7 @@ const ItemPage = () => {
         className={styles.boton}
         style={{ visibility: prevEnabled ? "visible" : "hidden" }}
         >
-          <span class="material-symbols-outlined">
+          <span class="material-symbols-outlined" style={{marginLeft: "0.6rem"}}>
             arrow_back_ios
           </span>
         </Link>
