@@ -54,62 +54,27 @@ const pageData = [[
     },
     {
         id_seccion: 2,
-        titulo: "Documento 2",
+        titulo: "Needfinding",
         archivos: [
             {
-                id: 5,
-                nombre: "Nombre Archivo 1",
-                enlace_doc: "enlace 1",
+                id: 7,
+                nombre: "Needfinding Presentación",
+                enlace_doc: "15oHKDwA0ID-uiCOaG6TVkYbxb6Dp8Bcd",
                 imagen: "",
-                tipo: "video"
-            },
-            {
-                id: 6,
-                nombre: "Nombre Archivo 2",
-                enlace_doc: "enlace 2",
-                imagen: "",
-                tipo: "imagen"
+                tipo: "pdf"
             },
         ]
     },
     {
         id_seccion: 3,
-        titulo: "Documento 3",
+        titulo: "Probando prototipos de baja fidelidad",
         archivos: [
             {
-                id: 7,
-                nombre: "Nombre Archivo 1",
-                enlace_doc: "enlace 1",
-                imagen: "",
-                tipo: "imagen"
-            },
-            {
                 id: 8,
-                nombre: "Nombre Archivo 2",
-                enlace_doc: "enlace 2",
+                nombre: "Entrevista a profesor Dany",
+                enlace_doc: "1xXapd2Mr6jwRUPBxoffUXf-z3stz68YN",
                 imagen: "",
-                tipo: "imagen"
-            },
-            {
-                id: 9,
-                nombre: "Nombre Archivo 3",
-                enlace_doc: "enlace 3",
-                imagen: "",
-                tipo: "imagen"
-            },
-            {
-                id: 10,
-                nombre: "Nombre Archivo 4",
-                enlace_doc: "enlace 4",
-                imagen: "",
-                tipo: "imagen"
-            },
-            {
-                id: 11,
-                nombre: "Nombre Archivo 5",
-                enlace_doc: "enlace 5",
-                imagen: "",
-                tipo: "imagen"
+                tipo: "video"
             },
         ]
     },

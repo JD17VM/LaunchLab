@@ -59,16 +59,16 @@ export function Inicio() {
                     <h2>Capturas</h2>
                     <div className={styles.grid_imgs}>
                         <div className={styles.cont_imagen}>
-                            <img src={imageHelper.imagen_LL_index} alt="" />
+                            <img src={pageDataToUse.enlace_grid_imagen_1} alt="" />
                         </div>
                         <div className={styles.cont_imagen}>
-                            <img src={imageHelper.imagen_LL_index} alt="" />
+                            <img src={pageDataToUse.enlace_grid_imagen_2} alt="" />
                         </div>
                         <div className={styles.cont_imagen}>
-                            <img src={imageHelper.imagen_LL_index} alt="" />
+                            <img src={pageDataToUse.enlace_grid_imagen_3} alt="" />
                         </div>
                         <div className={styles.cont_imagen}>
-                            <img src={imageHelper.imagen_LL_index} alt="" />
+                            <img src={pageDataToUse.enlace_grid_imagen_4} alt="" />
                         </div>
                     </div>
 

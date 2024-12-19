@@ -39,6 +39,17 @@ import background_cabecera_proceso from '../assets/imgs/backgrounds/background_p
 import background_cabecera_nosotros from '../assets/imgs/backgrounds/background_nosotros.webp'
 import background_cabecera_proyectos from '../assets/imgs/backgrounds/background_proyectos.jpg'
 
+import capturas_grid_LL_1 from '../assets/imgs/Launch_VR/Grid_Capturas_Interfaz/image_1.png'
+import capturas_grid_LL_2 from '../assets/imgs/Launch_VR/Grid_Capturas_Interfaz/image_2.png'
+import capturas_grid_LL_3 from '../assets/imgs/Launch_VR/Grid_Capturas_Interfaz/image_3.png'
+import capturas_grid_LL_4 from '../assets/imgs/Launch_VR/Grid_Capturas_Interfaz/image_4.png'
+
+import capturas_grid_AA_1 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interfaz/image_1.png'
+import capturas_grid_AA_2 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interfaz/image_2.png'
+//import capturas_grid_AA_3 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interfaz/image_3.png'
+//import capturas_grid_AA_4 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interfaz/image_4.png'
+
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -77,4 +88,12 @@ export default{
     "background_cabecera_proceso": background_cabecera_proceso,
     "background_cabecera_nosotros": background_cabecera_nosotros,
     "background_cabecera_proyectos": background_cabecera_proyectos,
+
+    "capturas_grid_LL_1": capturas_grid_LL_1,
+    "capturas_grid_LL_2": capturas_grid_LL_2,
+    "capturas_grid_LL_3": capturas_grid_LL_3,
+    "capturas_grid_LL_4": capturas_grid_LL_4,
+
+    "capturas_grid_AA_1": capturas_grid_AA_1,
+    "capturas_grid_AA_2": capturas_grid_AA_2,
 }
