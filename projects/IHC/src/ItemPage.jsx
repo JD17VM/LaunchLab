@@ -8,6 +8,7 @@ import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import styles from './assets/styles/estilos_item_page.module.css'
 
 import pageData from './data/documentos';
+import { useEffect } from 'react';
 
 
 const ItemPage = () => {
@@ -56,6 +57,10 @@ const ItemPage = () => {
   } else if (archivo.tipo === "video"){
     content = <iframe src={`https://drive.google.com/file/d/${archivo.enlace_doc}/preview`}  allow="autoplay" className={styles.iframe_video_drive}></iframe>;
   }
+
+  useEffect(() => {
+    document.title = seccion.titulo;
+  }, []);
 
   return (
     <div className={styles.contenedor}>

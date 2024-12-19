@@ -5,10 +5,13 @@ import { Cabecera } from './widgets/Cabecera'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 
 import imageHelper from './utils/imageHelper'
-
+import { useEffect } from 'react';
 import styles from './assets/styles/estilos_proyectos.module.css'
 
 export function Proyectos() {
+    useEffect(() => {
+        document.title = "Proyectos";
+      }, []);
     return (
         <>
             <Cabecera background_image="s.webp">Proyectos</Cabecera>

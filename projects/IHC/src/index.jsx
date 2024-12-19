@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import styles from './assets/styles/estilos_index.module.css'
 
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import imageHelper from './utils/imageHelper'
 
@@ -11,6 +12,10 @@ import pageData from './data/index';
 
 
 export function Inicio() {
+    useEffect(() => {
+        document.title = "Inicio";
+      }, []);
+
     const location = useLocation(); // Usa el hook useLocation
 
     let pageDataToUse;

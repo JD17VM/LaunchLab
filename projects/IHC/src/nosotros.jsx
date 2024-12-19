@@ -7,8 +7,11 @@ import styles from './assets/styles/estilos_nosotros.module.css'
 
 
 import imageHelper from './utils/imageHelper'
-
+import { useEffect } from 'react';
 export function Nosotros() {
+  useEffect(() => {
+    document.title = "Nosotros";
+  }, []);
   return (
     <>
 

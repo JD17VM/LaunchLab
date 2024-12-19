@@ -8,10 +8,15 @@ import { Cabecera } from './widgets/Cabecera'
 import { Seccion } from './widgets/Seccion_Docs/Seccion'
 
 import styles from './assets/styles/estilos_documento.module.css'
-
+import { useEffect } from 'react';
 import pageData from './data/documentos';
 
 export function Documentos() {
+
+    useEffect(() => {
+        document.title = "Documentos";
+      }, []);
+
     const location = useLocation(); // Usa el hook useLocation
 
     let pageDataToUse;

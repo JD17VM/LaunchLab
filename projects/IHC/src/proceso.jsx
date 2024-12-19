@@ -8,7 +8,7 @@ import styles from './assets/styles/estilos_proceso.module.css'
 import imageHelper from './utils/imageHelper'
 
 import { Cabecera } from './widgets/Cabecera'
-
+import { useEffect } from 'react';
 import pageData from './data/proceso';
 
 
@@ -30,6 +30,10 @@ function Etapa ({children, contenido, enlace_imagen}){
 
 
 export function Proceso() {
+
+  useEffect(() => {
+    document.title = "Proceso";
+  }, []);
 
   const location = useLocation(); // Usa el hook useLocation
 
