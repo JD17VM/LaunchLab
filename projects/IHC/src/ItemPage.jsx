@@ -18,12 +18,12 @@ const ItemPage = () => {
   console.log("location.pathname:", location.pathname);
   let pageDataToUse;
   let enlace_principal;
-  if (location.pathname.startsWith('/documentos')) { // Usa location.pathname
-    pageDataToUse = pageData[0];  
-    enlace_principal = '/documentos';
-  } else if (location.pathname.startsWith('/documentos2')) {
-    pageDataToUse = pageData[1];
+  if (location.pathname.startsWith('/documentos2')) { // Usa location.pathname
+    pageDataToUse = pageData[1];  
     enlace_principal = '/documentos2';
+  } else if (location.pathname.startsWith('/documentos')) {
+    pageDataToUse = pageData[0];
+    enlace_principal = '/documentos';
   } else {
     // Manejar rutas no encontradas
     pageDataToUse = { titulo: "Error", contenido: <p>Página no encontrada</p> };

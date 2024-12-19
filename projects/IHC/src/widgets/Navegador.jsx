@@ -39,7 +39,8 @@ export function Navegador (){
     // Simplificando la lógica con un switch
     switch (location.pathname) {
         case '/':
-        case '/index': 
+        case '/index':
+        case '/documentos':
         case '/nosotros':
         case '/proceso':
         case '/proyectos':
@@ -57,7 +58,18 @@ export function Navegador (){
             document.body.classList.add('bg_AA');
             break;
         default:
-            pageDataToUse = pageData[0];
+            if (location.pathname.startsWith('/documentos2')) { // Usa location.pathname
+                pageDataToUse = pageData[1];
+                document.body.classList.remove('bg_LL');
+                document.body.classList.add('bg_AA');
+                break;
+              } else if (location.pathname.startsWith('/documentos')) {
+                pageDataToUse = pageData[0];
+                document.body.classList.remove('bg_AA');
+                document.body.classList.add('bg_LL');
+                break;}
+            else{
+            pageDataToUse = pageData[0];}
     }
 
     useEffect(() => {

@@ -114,7 +114,7 @@ const pageData = [[
 
 [
     {
-        id_seccion: 4,
+        id_seccion: 5,
         titulo: "Documentos 1 -p2",
         archivos: [
             {
@@ -144,7 +144,7 @@ const pageData = [[
         ]
     },
     {
-        id_seccion: 5,
+        id_seccion: 6,
         titulo: "Documento 2 -p2",
         archivos: [
             {
