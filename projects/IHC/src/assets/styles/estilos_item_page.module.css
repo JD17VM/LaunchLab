@@ -1,0 +1,43 @@
+.contenedor{
+    padding:4rem 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+    .contenedor > h1{
+        font-size: var(--fuente_tamanio_titulo_2);
+        font-weight: var(--fuente_semibold);
+        color: var(--color_blanco)
+    }
+
+    .contenedor > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+        .contenedor > div > .boton{
+            background-color: red;
+            height: 4rem;
+            width: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .contenedor > div > .boton > span{
+                font-size: 2rem;
+                font-weight: 800;
+                color: var(--color_blanco)
+            }
+
+        .contenedor > div > .documento_especifico{
+            background-color: black;
+            width:80%;
+            height: 100%;
+        }

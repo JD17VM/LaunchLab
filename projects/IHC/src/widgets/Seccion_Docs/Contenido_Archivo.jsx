@@ -1,14 +1,19 @@
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 import styles from '../../assets/styles/estilos_documento.module.css'
 
-export function Contenido_Archivo ({children, enlace, img}){
+export function Contenido_Archivo ({children, img, enlace_doc, id, id_seccion}){
+    const location = useLocation(); // Usa el hook useLocation
+    console.log("location.pathname:", location.pathname);
+
     return(
-        <a href={enlace} className={styles.cont_archivo}>
+        <Link to={`${location.pathname}/${id_seccion}/${id}`} className={styles.cont_archivo}>
             <img 
                 src={img} 
                 alt="dsd" 
-                onClick={() => showImage(this)}  // Usa onClick en lugar de onclick
             />
             <p>{children}</p>
-        </a>
+        </Link>
     )
 }

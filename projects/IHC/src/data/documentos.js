@@ -1,0 +1,168 @@
+import imageHelper from '../utils/imageHelper'
+
+
+const pageData = [[
+    {
+        id_seccion: 1,
+        titulo: "Documentos 1",
+        archivos: [
+            {
+                id: 1,
+                nombre: "Nombre Archivo 1",
+                enlace_doc: "enlace 1",
+                imagen: imageHelper.Image_default
+            },
+            {
+                id: 2,
+                nombre: "Nombre Archivo 2",
+                enlace_doc: "enlace 2",
+                imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/24-ponder_9-05-2007_14-22-44-crop.jpg/800px-24-ponder_9-05-2007_14-22-44-crop.jpg"
+            },
+            {
+                id: 3,
+                nombre: "Nombre Archivo 3",
+                enlace_doc: "enlace 3",
+                imagen: "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 4,
+                nombre: "Nombre Archivo 4",
+                enlace_doc: "enlace 4",
+                imagen: "https://github.com/JD17VM/LaunchLab/blob/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+        ]
+    },
+    {
+        id_seccion: 2,
+        titulo: "Documento 2",
+        archivos: [
+            {
+                id: 5,
+                nombre: "Nombre Archivo 1",
+                enlace_doc: "enlace 1",
+                imagen: imageHelper.Image_default
+            },
+            {
+                id: 6,
+                nombre: "Nombre Archivo 2",
+                enlace_doc: "enlace 2",
+                imagen: imageHelper.PDF_default
+            },
+        ]
+    },
+    {
+        id_seccion: 3,
+        titulo: "Documento 3",
+        archivos: [
+            {
+                id: 7,
+                nombre: "Nombre Archivo 1",
+                enlace_doc: "enlace 1",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 8,
+                nombre: "Nombre Archivo 2",
+                enlace_doc: "enlace 2",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 9,
+                nombre: "Nombre Archivo 3",
+                enlace_doc: "enlace 3",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 10,
+                nombre: "Nombre Archivo 4",
+                enlace_doc: "enlace 4",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 11,
+                nombre: "Nombre Archivo 5",
+                enlace_doc: "enlace 5",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+        ]
+    },
+    {
+        id_seccion: 4,
+        titulo: "Documento 4",
+        archivos: [
+            {
+                id: 12,
+                nombre: "Nombre Archivo 1",
+                enlace_doc: "enlace 1",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 13,
+                nombre: "Nombre Archivo 2",
+                enlace_doc: "enlace 2",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 14,
+                nombre: "Nombre Archivo 3",
+                enlace_doc: "enlace 3",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+        ]
+    },
+],
+
+[
+    {
+        id_seccion: 4,
+        titulo: "Documentos 1 -p2",
+        archivos: [
+            {
+                id: 15,
+                nombre: "Nombre Archivo 1",
+                enlace_doc: "enlace 1",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 16,
+                nombre: "Nombre Archivo 2",
+                enlace_doc: "enlace 2",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 17,
+                nombre: "Nombre Archivo 3",
+                enlace_doc: "enlace 3",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 18,
+                nombre: "Nombre Archivo 4",
+                enlace_doc: "enlace 4",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+        ]
+    },
+    {
+        id_seccion: 5,
+        titulo: "Documento 2 -p2",
+        archivos: [
+            {
+                id: 19,
+                nombre: "Nombre Archivo 1",
+                enlace_doc: "enlace 1",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+            {
+                id: 20,
+                nombre: "Nombre Archivo 2",
+                enlace_doc: "enlace 2",
+                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+            },
+        ]
+    },
+],
+
+]
+
+export default pageData;

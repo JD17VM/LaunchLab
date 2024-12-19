@@ -9,146 +9,7 @@ import { Seccion } from './widgets/Seccion_Docs/Seccion'
 
 import styles from './assets/styles/estilos_documento.module.css'
 
-import imageHelper from './utils/imageHelper'
-
-
-const pageData = [[
-    {
-        titulo: "Documentos 1",
-        archivos: [
-            {
-                nombre: "Nombre Archivo 1",
-                enlace: "enlace 1",
-                imagen: imageHelper.Image_default
-            },
-            {
-                nombre: "Nombre Archivo 2",
-                enlace: "enlace 2",
-                imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/24-ponder_9-05-2007_14-22-44-crop.jpg/800px-24-ponder_9-05-2007_14-22-44-crop.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 3",
-                enlace: "enlace 3",
-                imagen: "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 4",
-                enlace: "enlace 4",
-                imagen: "https://github.com/JD17VM/LaunchLab/blob/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-        ]
-    },
-    {
-        titulo: "Documento 2",
-        archivos: [
-            {
-                nombre: "Nombre Archivo 1",
-                enlace: "enlace 1",
-                imagen: imageHelper.Image_default
-            },
-            {
-                nombre: "Nombre Archivo 2",
-                enlace: "enlace 2",
-                imagen: imageHelper.PDF_default
-            },
-        ]
-    },
-    {
-        titulo: "Documento 3",
-        archivos: [
-            {
-                nombre: "Nombre Archivo 1",
-                enlace: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 2",
-                enlace: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 3",
-                enlace: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 4",
-                enlace: "enlace 4",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 5",
-                enlace: "enlace 5",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-        ]
-    },
-    {
-        titulo: "Documento 4",
-        archivos: [
-            {
-                nombre: "Nombre Archivo 1",
-                enlace: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 2",
-                enlace: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 3",
-                enlace: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-        ]
-    },
-],
-
-[
-    {
-        titulo: "Documentos 1 -p2",
-        archivos: [
-            {
-                nombre: "Nombre Archivo 1",
-                enlace: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 2",
-                enlace: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 3",
-                enlace: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 4",
-                enlace: "enlace 4",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-        ]
-    },
-    {
-        titulo: "Documento 2 -p2",
-        archivos: [
-            {
-                nombre: "Nombre Archivo 1",
-                enlace: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-            {
-                nombre: "Nombre Archivo 2",
-                enlace: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
-            },
-        ]
-    },
-],
-
-]
+import pageData from './data/documentos';
 
 export function Documentos() {
     const location = useLocation(); // Usa el hook useLocation
@@ -170,8 +31,8 @@ export function Documentos() {
 
         <div className={styles.contenido}>
             {
-                pageDataToUse.map(({ titulo, archivos }, index) => (
-                    <Seccion key={titulo || index} props={archivos}>{titulo}</Seccion>
+                pageDataToUse.map(({ titulo, archivos, id_seccion }) => (
+                    <Seccion key={id_seccion} id_seccion={id_seccion} props={archivos}>{titulo}</Seccion>
                 ))
             }
         </div>
