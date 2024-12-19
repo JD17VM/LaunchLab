@@ -15,7 +15,7 @@ const App = () => {
 
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename="/LaunchLab">
       <Navegador></Navegador>
 
       <main>
