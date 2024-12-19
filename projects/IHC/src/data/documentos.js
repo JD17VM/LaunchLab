@@ -67,10 +67,38 @@ const pageData = [[
     },
     {
         id_seccion: 3,
-        titulo: "Probando prototipos de baja fidelidad",
+        titulo: "Prototipo de Baja Fidelidad",
         archivos: [
             {
-                id: 8,
+                id: 1,
+                nombre: "Prototipo 1",
+                enlace_doc: "Prototipo_BF_1.jpg",
+                imagen: "",
+                tipo: "imagen"
+            },
+            {
+                id: 2,
+                nombre: "Prototipo 2",
+                enlace_doc: "Prototipo_BF_2.jpg",
+                imagen: "",
+                tipo: "imagen"
+            },
+            {
+                id: 3,
+                nombre: "Prototipo 3",
+                enlace_doc: "Prototipo_BF_3.jpg",
+                imagen: "",
+                tipo: "imagen"
+            },
+            {
+                id: 4,
+                nombre: "Prototipo 4",
+                enlace_doc: "Prototipo_BF_4.jpg",
+                imagen: "",
+                tipo: "imagen"
+            },
+            {
+                id: 5,
                 nombre: "Entrevista a profesor Dany",
                 enlace_doc: "1xXapd2Mr6jwRUPBxoffUXf-z3stz68YN",
                 imagen: "",
