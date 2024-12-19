@@ -7,39 +7,7 @@ import { useLocation } from 'react-router-dom';
 
 import imageHelper from './utils/imageHelper'
 
-
-const pageData = [
-    { 
-        nombre_proyecto: "Launch Lab",
-        titulo: "Launch Lab transforma el aprendizaje de física en una experiencia VR",
-        texto_titulo: "Juego gamificado para aprender introducción a la física usando dinamicas de juego de aventura.",
-        enlace_imagen_principal: "./assets/imgs/Persona_con_oculus.png",
-        enlace_imagen_izquierda: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_1: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_2: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_3: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_4: "./assets/imgs/Persona_con_oculus.png",
-        detalles_desarroladores: "Alex Enrique Mamani, Juan Diego Valdivia Mendoza",
-        detalles_dispositivos: "Meta Quest 2, Meta Quest, 3,Meta Quest Pro, HTC Vive y Vive Pro, Valve Index, Windows Mixed Reality (WMR), Pico 4",
-        detalles_lanzamiento: "04 de noviembre 2024",
-        detalles_rating: "04 de noviembre 2024",
-    },
-    { 
-        nombre_proyecto: "Arrow Ascend",
-        titulo: "Arrow Ascend transforma el aprendizaje de física en una experiencia VR",
-        texto_titulo: "Juego gamificado para aprender introducción a la física usando dinamicas de juego de aventura.",
-        enlace_imagen_principal: "./assets/imgs/Persona_con_oculus.png",
-        enlace_imagen_izquierda: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_1: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_2: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_3: "./assets/imgs/Persona_con_oculus.png",
-        enlace_grid_imagen_4: "./assets/imgs/Persona_con_oculus.png",
-        detalles_desarroladores: "Alex Enrique Mamani, Juan Diego Valdivia Mendoza",
-        detalles_dispositivos: "Meta Quest 2, Meta Quest, 3,Meta Quest Pro, HTC Vive y Vive Pro, Valve Index, Windows Mixed Reality (WMR), Pico 4",
-        detalles_lanzamiento: "04 de noviembre 2024",
-        detalles_rating: "04 de noviembre 2024",
-    }
-  ];
+import pageData from './data/index';
 
 
 export function Inicio() {
@@ -72,8 +40,8 @@ export function Inicio() {
             <div className={styles.contenedor_info}>
                 <div className={styles.barra_izquierda}>
                     <div className={styles.cont_corre}>
-                        <h2>Launch Lab</h2>
-                        <a href="">
+                        <h2>{pageDataToUse.nombre_proyecto}</h2>
+                        <a href={pageDataToUse.enlace_probar_ahora} target="_blank">
                             <p>Probar Ahora</p>
                         </a>
                         <div className={styles.cont_imagen}>
@@ -101,11 +69,11 @@ export function Inicio() {
 
                     <h2>Detalles</h2>
                     <div className={styles.cont_datos}>
-                        <h3>Desarrolladores:</h3> <p>Alex Enrique Mamani, Juan Diego Valdivia Mendoza</p>
+                        <h3>Desarrolladores:</h3> <p>{pageDataToUse.detalles_desarrolladores}</p>
 
-                        <h3>Dispositivos:</h3> <p>Meta Quest 2, Meta Quest, 3,Meta Quest Pro, HTC Vive y Vive Pro, Valve Index, Windows Mixed Reality (WMR), Pico 4</p>
+                        <h3>Dispositivos:</h3> <p>{pageDataToUse.detalles_dispositivos}</p>
 
-                        <h3>Lanzamiento:</h3> <p>04 de noviembre 2024</p>
+                        <h3>Lanzamiento:</h3> <p>{pageDataToUse.detalles_lanzamiento}</p>
 
                         <h3>Rating:</h3> <div><img src={imageHelper.Rating_12} alt="" /></div>
                     </div>
