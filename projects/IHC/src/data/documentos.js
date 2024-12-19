@@ -10,25 +10,29 @@ const pageData = [[
                 id: 1,
                 nombre: "Nombre Archivo 1",
                 enlace_doc: "enlace 1",
-                imagen: imageHelper.Image_default
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 2,
                 nombre: "Nombre Archivo 2",
                 enlace_doc: "enlace 2",
-                imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/24-ponder_9-05-2007_14-22-44-crop.jpg/800px-24-ponder_9-05-2007_14-22-44-crop.jpg"
+                imagen: "",
+                tipo: "pdf"
             },
             {
                 id: 3,
                 nombre: "Nombre Archivo 3",
-                enlace_doc: "enlace 3",
-                imagen: "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                enlace_doc: "10JgPF4qazbrkDK4DLRIB620YBEdWe3ox",
+                imagen: "https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg",
+                tipo: "video"
             },
             {
                 id: 4,
                 nombre: "Nombre Archivo 4",
                 enlace_doc: "enlace 4",
-                imagen: "https://github.com/JD17VM/LaunchLab/blob/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "pdf"
             },
         ]
     },
@@ -40,13 +44,15 @@ const pageData = [[
                 id: 5,
                 nombre: "Nombre Archivo 1",
                 enlace_doc: "enlace 1",
-                imagen: imageHelper.Image_default
+                imagen: "",
+                tipo: "video"
             },
             {
                 id: 6,
                 nombre: "Nombre Archivo 2",
                 enlace_doc: "enlace 2",
-                imagen: imageHelper.PDF_default
+                imagen: "",
+                tipo: "imagen"
             },
         ]
     },
@@ -58,31 +64,36 @@ const pageData = [[
                 id: 7,
                 nombre: "Nombre Archivo 1",
                 enlace_doc: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 8,
                 nombre: "Nombre Archivo 2",
                 enlace_doc: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 9,
                 nombre: "Nombre Archivo 3",
                 enlace_doc: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 10,
                 nombre: "Nombre Archivo 4",
                 enlace_doc: "enlace 4",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 11,
                 nombre: "Nombre Archivo 5",
                 enlace_doc: "enlace 5",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
         ]
     },
@@ -94,19 +105,22 @@ const pageData = [[
                 id: 12,
                 nombre: "Nombre Archivo 1",
                 enlace_doc: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 13,
                 nombre: "Nombre Archivo 2",
                 enlace_doc: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 14,
                 nombre: "Nombre Archivo 3",
                 enlace_doc: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
         ]
     },
@@ -121,25 +135,29 @@ const pageData = [[
                 id: 15,
                 nombre: "Nombre Archivo 1",
                 enlace_doc: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 16,
                 nombre: "Nombre Archivo 2",
                 enlace_doc: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 17,
                 nombre: "Nombre Archivo 3",
                 enlace_doc: "enlace 3",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 18,
                 nombre: "Nombre Archivo 4",
                 enlace_doc: "enlace 4",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
         ]
     },
@@ -151,13 +169,15 @@ const pageData = [[
                 id: 19,
                 nombre: "Nombre Archivo 1",
                 enlace_doc: "enlace 1",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
             {
                 id: 20,
                 nombre: "Nombre Archivo 2",
                 enlace_doc: "enlace 2",
-                imagen: "./assets/imgs/Imagenes_Cara_Documentos/imagen_carro.jpg"
+                imagen: "",
+                tipo: "imagen"
             },
         ]
     },

@@ -29,6 +29,7 @@ import background_image_LL from '../assets/imgs/Launch_VR/Persona_con_oculus.png
 
 import Image_default from '../assets/imgs/Image_Default.png'
 import PDF_default from '../assets/imgs/PDF_Default.png'
+import Video_default from '../assets/imgs/Video_Default.png'
 
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
@@ -59,4 +60,5 @@ export default{
 
     "Image_default": Image_default,
     "PDF_default": PDF_default,
+    "Video_default": Video_default,
 }

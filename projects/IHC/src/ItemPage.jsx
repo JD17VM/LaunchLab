@@ -46,10 +46,20 @@ const ItemPage = () => {
   const currentIndex = seccion?.archivos.findIndex((archivo) => archivo.id == id);
   const prevEnabled = currentIndex > 0;
   const nextEnabled = currentIndex < seccion?.archivos.length - 1;
+  
+  let content;
+
+  if (archivo.tipo === "imagen") {
+    content = <img src={`https://raw.githubusercontent.com/JD17VM/LaunchLab/refs/heads/main/projects/IHC/src/assets/imgs/Imagenes_Cara_Documentos/${archivo.enlace_doc}`} alt="Descripción de la imagen" />;
+  } else if (archivo.tipo === "pdf"){
+    content = <iframe src={`https://drive.google.com/file/d/${archivo.enlace_doc}/preview`}  allow="autoplay" className={styles.iframe_pdf_drive}></iframe>;
+  } else if (archivo.tipo === "video"){
+    content = <iframe src={`https://drive.google.com/file/d/${archivo.enlace_doc}/preview`}  allow="autoplay" className={styles.iframe_video_drive}></iframe>;
+  }
 
   return (
     <div className={styles.contenedor}>
-      <h1>{archivo.enlace_doc}</h1>
+      <h1>{seccion.titulo} - {archivo.enlace_doc}</h1>
       <div>
         <Link 
         to={`${enlace_principal}/${id_seccion}/${parseInt(id) - 1}`} 
@@ -61,7 +71,9 @@ const ItemPage = () => {
           </span>
         </Link>
 
-        <div className={styles.documento_especifico}></div>
+        <div className={styles.documento_especifico}>
+          {content}
+        </div>
 
         <Link 
         to={`${enlace_principal}/${id_seccion}/${parseInt(id) + 1}`} 
