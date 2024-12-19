@@ -62,10 +62,31 @@
         }
 
 
-        .contenido > .seccion > .contenido_seccion > .cont_archivo > img{
+        
+
+        .contenido > .seccion > .contenido_seccion > .cont_archivo > div{
             width: 100%;
             aspect-ratio: 16/9;
             margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-size: 100%;          
+            background-position: center;    
+            background-repeat: no-repeat;
+            transition: background-size 0.3s ease-in-out;
+        }
+
+        .contenido > .seccion > .contenido_seccion > .cont_archivo:hover > div{
+            background-size: 150%;
+        }
+
+        .contenido > .seccion > .contenido_seccion > .cont_archivo > div > img{
+            width: 80%;
+            height: 80%;
+            object-fit: contain; /* Asegura que la imagen se ajuste al contenedor */
+            object-position: center;
         }
 
         .contenido > .seccion > .contenido_seccion > .cont_archivo > p{
@@ -73,3 +94,5 @@
             font-size: var(--fuente_tamanio_titulo_3);
             color: var(--color_blanco);
         }
+
+        

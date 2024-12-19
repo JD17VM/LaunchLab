@@ -31,6 +31,9 @@ import Image_default from '../assets/imgs/Image_Default.png'
 import PDF_default from '../assets/imgs/PDF_Default.png'
 import Video_default from '../assets/imgs/Video_Default.png'
 
+import background_image_AA_proyecto from '../assets/imgs/imagen_fondo_AA.png'
+import background_image_LL_proyecto from '../assets/imgs/imagen_fondo_LL.png'
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -61,4 +64,7 @@ export default{
     "Image_default": Image_default,
     "PDF_default": PDF_default,
     "Video_default": Video_default,
+
+    "background_image_AA_proyecto": background_image_AA_proyecto,
+    "background_image_LL_proyecto": background_image_LL_proyecto,
 }
