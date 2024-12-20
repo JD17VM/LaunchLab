@@ -11,6 +11,8 @@ import imageHelper from './utils/imageHelper'
 import pageData from './data/index';
 
 
+import { Img_Transition } from './widgets/Img_Transition'
+
 export function Inicio() {
     useEffect(() => {
         document.title = "Inicio";
@@ -37,7 +39,7 @@ export function Inicio() {
                     <p>{pageDataToUse.texto_titulo}</p>
                 </div>
                 <div className={styles.cont_imagen}>
-                    <img src={pageDataToUse.enlace_imagen_principal} alt="" />
+                    <Img_Transition></Img_Transition>
                 </div>
             </div>
 
