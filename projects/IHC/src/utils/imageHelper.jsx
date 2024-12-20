@@ -22,11 +22,8 @@ import foto_Alex from '../assets/imgs/Foto_Alex.jpg';
 
 import Rating_12 from '../assets/imgs/rating/R_12.png';
 
-import imagen_LL_index from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
+import imagen_LL_index from '../assets/imgs/Launch_VR/Persona_con_oculus_LL.png'
 import imagen_AA_index from '../assets/imgs/Launch_VR/Persona_con_arco.png'
-
-import background_image_AA from '../assets/imgs/Arrow_Ascend/Background_Total.png'
-import background_image_LL from '../assets/imgs/Launch_VR/Persona_con_oculus.png'
 
 import Image_default from '../assets/imgs/Image_Default.png'
 import PDF_default from '../assets/imgs/PDF_Default.png'
@@ -50,6 +47,9 @@ import capturas_grid_AA_2 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interf
 //import capturas_grid_AA_3 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interfaz/image_3.png'
 //import capturas_grid_AA_4 from '../assets/imgs/Arrow_Ascend/Grid_Capturas_Interfaz/image_4.png'
 
+import imagen__principal_index_LL_1 from '../assets/imgs/Launch_VR/Persona_con_oculus_LL.png'
+import imagen__principal_index_LL_2 from '../assets/imgs/Launch_VR/Canion_LL.png'
+import imagen__principal_index_LL_3 from '../assets/imgs/Launch_VR/Carro_LL.png'
 
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
@@ -98,5 +98,9 @@ export default{
 
     "capturas_grid_AA_1": capturas_grid_AA_1,
     "capturas_grid_AA_2": capturas_grid_AA_2,
+
+    "imagen__principal_index_LL_1" : imagen__principal_index_LL_1,
+    "imagen__principal_index_LL_2" : imagen__principal_index_LL_2,
+    "imagen__principal_index_LL_3" : imagen__principal_index_LL_3,
 
 }
