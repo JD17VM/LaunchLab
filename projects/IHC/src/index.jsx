@@ -39,7 +39,7 @@ export function Inicio() {
                     <p>{pageDataToUse.texto_titulo}</p>
                 </div>
                 <div className={styles.cont_imagen}>
-                    <Img_Transition></Img_Transition>
+                    <Img_Transition images={pageDataToUse.lista_imagenes_principal} ></Img_Transition>
                 </div>
             </div>
 

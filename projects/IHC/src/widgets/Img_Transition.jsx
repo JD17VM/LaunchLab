@@ -2,12 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import imageHelper from '../utils/imageHelper'
 
-export function Img_Transition() {
-    const images = [
-        imageHelper.imagen__principal_index_LL_1,
-        imageHelper.imagen__principal_index_LL_2,
-        imageHelper.imagen__principal_index_LL_3,
-    ];
+export function Img_Transition({images}) {
 
     const [currentIndex, setCurrentIndex] = useState(0); // Índice de la imagen actual
     const [opacity, setOpacity] = useState(1); // Control de opacidad para la transición
@@ -23,7 +18,7 @@ export function Img_Transition() {
         }, 5000); // Cambiar imagen cada 5 segundos
 
         return () => clearInterval(interval); // Limpiar intervalo al desmontar
-    }, [images.length]);
+    }, [images]);
 
     return (
         <img

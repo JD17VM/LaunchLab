@@ -51,6 +51,9 @@ import imagen__principal_index_LL_1 from '../assets/imgs/Launch_VR/Persona_con_o
 import imagen__principal_index_LL_2 from '../assets/imgs/Launch_VR/Canion_LL.png'
 import imagen__principal_index_LL_3 from '../assets/imgs/Launch_VR/Carro_LL.png'
 
+import imagen__principal_index_AA_1 from '../assets/imgs/Arrow_Ascend/Arquero_AA.png'
+import imagen__principal_index_AA_2 from '../assets/imgs/Arrow_Ascend/Dragon_AA.png'
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -103,4 +106,6 @@ export default{
     "imagen__principal_index_LL_2" : imagen__principal_index_LL_2,
     "imagen__principal_index_LL_3" : imagen__principal_index_LL_3,
 
+    "imagen__principal_index_AA_1" : imagen__principal_index_AA_1,
+    "imagen__principal_index_AA_2" : imagen__principal_index_AA_2,
 }
