@@ -52,7 +52,7 @@ export function Inicio() {
                             <p>Probar Ahora</p>
                         </a>
                         <div className={styles.cont_imagen}>
-                            <img src={imageHelper.imagen_LL_index} alt="" />
+                            <img src={pageDataToUse.enlace_imagen_portada} alt="" />
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ export function Inicio() {
 
                         <h3>Lanzamiento:</h3> <p>{pageDataToUse.detalles_lanzamiento}</p>
 
-                        <h3>Rating:</h3> <div><img src={imageHelper.Rating_12} alt="" /></div>
+                        <h3>Rating:</h3> <div><img src={pageDataToUse.detalles_rating} alt="" /></div>
                     </div>
 
                 </div>

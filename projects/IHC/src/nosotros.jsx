@@ -41,6 +41,17 @@ export function Nosotros() {
             </div>
           </div>
 
+          <div className={styles.integrante}>
+            <img src={imageHelper.foto_Cuesta} alt="" />
+            <div>
+              <p>Bernardo Nicolás Cuesta Veratrini</p>
+              <p>- Maximo Goleador Copa Sudamericana 2022</p>
+              <p>- Campeón Nacional 2015</p>
+              <p>- Segundo Máximo Goleador Vigente Liga Peruana</p>
+              <p>- Creador del Bernadocuestismo</p>
+            </div>
+          </div>
+
         </div>
 
       </div>

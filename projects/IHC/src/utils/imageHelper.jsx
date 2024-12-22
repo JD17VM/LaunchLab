@@ -19,8 +19,10 @@ import logoInstagramBlanco from '../assets/imgs/logos/redes_sociales/logo_instag
 
 import foto_JuanDiego from '../assets/imgs/Foto_JuanDiego.jpg';
 import foto_Alex from '../assets/imgs/Foto_Alex.jpg';
+import foto_Cuesta from '../assets/imgs/Foto_Cuesta.jpg';
 
 import Rating_12 from '../assets/imgs/rating/R_12.png';
+import Rating_16 from '../assets/imgs/rating/R_16.png';
 
 import imagen_LL_index from '../assets/imgs/Launch_VR/Persona_con_oculus_LL.png'
 import imagen_AA_index from '../assets/imgs/Launch_VR/Persona_con_arco.png'
@@ -54,6 +56,9 @@ import imagen__principal_index_LL_3 from '../assets/imgs/Launch_VR/Carro_LL.png'
 import imagen__principal_index_AA_1 from '../assets/imgs/Arrow_Ascend/Arquero_AA.png'
 import imagen__principal_index_AA_2 from '../assets/imgs/Arrow_Ascend/Dragon_AA.png'
 
+import imagen_portada_AA from '../assets/imgs/Imagen_Izquierda_AA.png'
+import imagen_portada_LL from '../assets/imgs/Imagen_Izquierda_Launch.png'
+
 export default{
     "imagen_AA_proceso_1": imagen_AA_proceso_1,
     "imagen_AA_proceso_2": imagen_AA_proceso_2,
@@ -76,8 +81,10 @@ export default{
 
     "foto_JuanDiego": foto_JuanDiego,
     "foto_Alex": foto_Alex,
+    "foto_Cuesta": foto_Cuesta,
 
     "Rating_12": Rating_12,
+    "Rating_16": Rating_16,
 
     "imagen_LL_index": imagen_LL_index,
     "imagen_AA_index": imagen_AA_index,
@@ -108,4 +115,7 @@ export default{
 
     "imagen__principal_index_AA_1" : imagen__principal_index_AA_1,
     "imagen__principal_index_AA_2" : imagen__principal_index_AA_2,
+
+    "imagen_portada_AA" : imagen_portada_AA,
+    "imagen_portada_LL" : imagen_portada_LL,
 }

@@ -6,7 +6,7 @@ const pageData = [
         titulo: "Launch Lab transforma el aprendizaje de física en una experiencia VR",
         texto_titulo: "Juego gamificado para aprender introducción a la física usando dinamicas de juego de aventura.",
         lista_imagenes_principal: [imageHelper.imagen__principal_index_LL_1, imageHelper.imagen__principal_index_LL_2, imageHelper.imagen__principal_index_LL_3],
-        enlace_imagen_izquierda: "./assets/imgs/Persona_con_oculus.png",
+        enlace_imagen_portada: imageHelper.imagen_portada_LL,
         enlace_grid_imagen_1: imageHelper.capturas_grid_LL_1,
         enlace_grid_imagen_2: imageHelper.capturas_grid_LL_2,
         enlace_grid_imagen_3: imageHelper.capturas_grid_LL_3,
@@ -14,7 +14,7 @@ const pageData = [
         detalles_desarrolladores: "Alex Enrique Mamani, Juan Diego Valdivia Mendoza",
         detalles_dispositivos: "Meta Quest 2, Meta Quest, 3,Meta Quest Pro, HTC Vive y Vive Pro, Valve Index, Windows Mixed Reality (WMR), Pico 4",
         detalles_lanzamiento: "04 de noviembre 2024",
-        detalles_rating: "04 de noviembre 2024",
+        detalles_rating: imageHelper.Rating_12,
         enlace_probar_ahora: "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
     },
     {
@@ -22,7 +22,7 @@ const pageData = [
         titulo: "Arrow Ascend transforma el aprendizaje de física en una experiencia VR",
         texto_titulo: "Juego gamificado para aprender introducción a la física usando dinamicas de juego de aventura.",
         lista_imagenes_principal: [imageHelper.imagen__principal_index_AA_1, imageHelper.imagen__principal_index_AA_2],
-        enlace_imagen_izquierda: "./assets/imgs/Persona_con_oculus.png",
+        enlace_imagen_portada: imageHelper.imagen_portada_AA,
         enlace_grid_imagen_1: imageHelper.capturas_grid_AA_1,
         enlace_grid_imagen_2: imageHelper.capturas_grid_AA_2,
         enlace_grid_imagen_3: "./assets/imgs/Persona_con_oculus.png",
@@ -30,7 +30,7 @@ const pageData = [
         detalles_desarrolladores: "Alex Enrique Mamani, Juan Diego Valdivia Mendoza",
         detalles_dispositivos: "Meta Quest 2, Meta Quest, 3,Meta Quest Pro, HTC Vive y Vive Pro, Valve Index, Windows Mixed Reality (WMR), Pico 4",
         detalles_lanzamiento: "04 de noviembre 2024",
-        detalles_rating: "04 de noviembre 2024",
+        detalles_rating: imageHelper.Rating_16,
         enlace_probar_ahora: "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
     }
 ];
