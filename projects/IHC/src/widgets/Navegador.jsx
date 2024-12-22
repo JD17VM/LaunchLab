@@ -72,6 +72,9 @@ export function Navegador (){
             pageDataToUse = pageData[0];}
     }
 
+
+
+
     useEffect(() => {
         // Se actualiza el estado cuando cambia la ubicación (pathname)
         setActiveLink(location.pathname);
@@ -83,11 +86,17 @@ export function Navegador (){
       useEffect(() => {
         // Función para manejar el evento de scroll
         const handleScroll = () => {
-          if (window.scrollY > 80) {
-            setScrolling(true); // Cambiar el estado si se pasa el umbral
-          } else {
-            setScrolling(false); // Si no, poner el estado como false
-          }
+
+            if (location.pathname.startsWith('/documentos/') || location.pathname.startsWith('/documentos2/')) {
+                setScrolling(true); // Forzar estado como reducido
+                return;
+            }
+
+            if (window.scrollY > 80) {
+                setScrolling(true); // Cambiar el estado si se pasa el umbral
+            } else {
+                setScrolling(false); // Si no, poner el estado como false
+            }
         };
     
         // Añadir el evento de scroll
@@ -97,7 +106,7 @@ export function Navegador (){
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
-      }, []); // El efecto solo se ejecuta una vez al montar el componente
+      }, [location.pathname]); // El efecto solo se ejecuta una vez al montar el componente
     
 
     return(

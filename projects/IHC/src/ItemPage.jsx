@@ -71,7 +71,7 @@ const ItemPage = () => {
         className={styles.boton}
         style={{ visibility: prevEnabled ? "visible" : "hidden" }}
         >
-          <span class="material-symbols-outlined" style={{marginLeft: "0.6rem"}}>
+          <span className="material-symbols-outlined" style={{marginLeft: "0.6rem"}}>
             arrow_back_ios
           </span>
         </Link>
@@ -85,7 +85,7 @@ const ItemPage = () => {
         className={styles.boton}
         style={{ visibility: nextEnabled ? "visible" : "hidden" }}
         >
-          <span class="material-symbols-outlined">
+          <span className="material-symbols-outlined">
             arrow_forward_ios
           </span>
         </Link>
