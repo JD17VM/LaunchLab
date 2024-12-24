@@ -41,7 +41,7 @@
 
 footer{
     background-color: #1C1C1C;
-    height: var(--height_footer);
+    /*height: var(--height_footer);*/
     width: 100%;
     display: grid;
 
@@ -129,7 +129,7 @@ footer > div{
 @media (max-width: 800px){
     footer{
         grid-template-columns: 1fr 1fr;
-        height:calc(2 * var(--height_footer))
+        height:auto;
     }
 
     footer > div > ul{
@@ -137,4 +137,42 @@ footer > div{
         margin: 0; /* Opcional: Elimina el margen por defecto */
         padding: 0; /* Opcional: Elimina el relleno por defecto */
     }
+
+    footer > div.contenedor_logo_fecha{
+        display: flex;
+        align-items: center;
+        grid-column:span 2;
+        flex-direction: row;
+    }
+
+
+    footer > div.contenedor_politicas{
+        grid-column: span 2;
+    }
+
+        footer > div.contenedor_politicas > ul{
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 1rem;
+            column-gap: 1rem;
+        }
+
+    footer > div.contenedor_contacto, footer > div.contenedor_redes_sociales{
+        padding: 1.5rem 0.5rem;
+    }
+
+    footer > div.contenedor_contacto > div > ul > li{
+        list-style-type:none;
+        padding-left: 0.5rem;
+    }
+
+
+    footer > div.contenedor_redes_sociales{
+        overflow: hidden;
+    }
+
+
+        footer > div.contenedor_redes_sociales > a > img{
+            margin-right: 0.3rem;
+        }
 }
