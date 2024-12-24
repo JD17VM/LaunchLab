@@ -32,7 +32,7 @@ export function Inicio() {
 
     return (
         <>
-
+             
             <div className={styles.presentacion}>
                 <div className={styles.cont_texto}>
                     <h1>{pageDataToUse.titulo}</h1>
@@ -43,7 +43,7 @@ export function Inicio() {
                 </div>
             </div>
 
-            {/* 
+            
             <div className={styles.contenedor_info}>
                 <div className={styles.barra_izquierda}>
                     <div className={styles.cont_corre}>
@@ -86,7 +86,7 @@ export function Inicio() {
                     </div>
 
                 </div>
-            </div>*/}
+            </div>
 
         </>
     )
