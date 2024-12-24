@@ -135,6 +135,12 @@ nav.reducida{
             flex-direction: column;
             top: 140px;
             right: 0;
+            transition: top 0.3s ease-in-out;
+        }
+
+
+        nav > ul.reducida_ul{
+            top: 100px
         }
 
 
