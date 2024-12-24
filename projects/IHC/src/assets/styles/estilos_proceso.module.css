@@ -110,3 +110,27 @@
 .cont_proceso > .etapa:nth-child(even) > .cont_imagen{
     order:1
 }
+
+
+@media (max-width: 800px){
+
+    .cont_proceso > .etapa{
+        column-gap: 1rem;
+    }
+
+    .cont_proceso > .etapa > .texto{
+        width:50%
+    }
+
+    .cont_proceso > .etapa > .cont_imagen{
+        width:50%;
+    }
+
+    .cont_proceso{
+        padding: 2rem 1rem;
+    }
+
+    .cont_proceso > .etapa > .division{
+        width: 0.3rem;
+    }
+}
