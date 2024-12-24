@@ -43,7 +43,7 @@ export function Inicio() {
                 </div>
             </div>
 
-
+            {/* 
             <div className={styles.contenedor_info}>
                 <div className={styles.barra_izquierda}>
                     <div className={styles.cont_corre}>
@@ -86,7 +86,7 @@ export function Inicio() {
                     </div>
 
                 </div>
-            </div>
+            </div>*/}
 
         </>
     )

@@ -166,3 +166,22 @@
         .contenedor_info > .informacion > .cont_datos > div > img{
             height: 100%;
         }
+
+@media (max-width: 1000px){
+    .presentacion{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    
+        .presentacion > .cont_texto{
+            width: 100%;
+            margin:0;
+        }
+
+    .presentacion > .cont_imagen{
+        width: 90%;
+        justify-content: center;
+    }
+}
