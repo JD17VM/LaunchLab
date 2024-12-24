@@ -10,7 +10,7 @@ import styles from '../assets/styles/estilos_navegador.module.css'
 import imageHelper from '../utils/imageHelper'
 
 const pageData = [
-    { 
+    {
         enlace_logo_proyecto: imageHelper.logo_LaunchLab_blanco,
         enlace_index: "/",
         enlace_documentos: "/documentos",
@@ -18,7 +18,7 @@ const pageData = [
         enlace_nosotros: "/nosotros",
         enlace_proyectos: "/proyectos",
     },
-    { 
+    {
         enlace_logo_proyecto: imageHelper.logo_ArrowAscend_fondoNegro,
         enlace_index: "/index2",
         enlace_documentos: "/documentos2",
@@ -28,7 +28,7 @@ const pageData = [
     },
 ];
 
-export function Navegador (){
+export function Navegador() {
     const location = useLocation(); // Usando useLocation
 
     const [activeLink, setActiveLink] = useState('');
@@ -63,13 +63,15 @@ export function Navegador (){
                 document.body.classList.remove('bg_LL');
                 document.body.classList.add('bg_AA');
                 break;
-              } else if (location.pathname.startsWith('/documentos')) {
+            } else if (location.pathname.startsWith('/documentos')) {
                 pageDataToUse = pageData[0];
                 document.body.classList.remove('bg_AA');
                 document.body.classList.add('bg_LL');
-                break;}
-            else{
-            pageDataToUse = pageData[0];}
+                break;
+            }
+            else {
+                pageDataToUse = pageData[0];
+            }
     }
 
 
@@ -78,12 +80,12 @@ export function Navegador (){
     useEffect(() => {
         // Se actualiza el estado cuando cambia la ubicación (pathname)
         setActiveLink(location.pathname);
-      }, [location.pathname]); // Dependencia en location.pathname para que se ejecute cuando cambia
+    }, [location.pathname]); // Dependencia en location.pathname para que se ejecute cuando cambia
 
 
-      const [scrolling, setScrolling] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
 
-      useEffect(() => {
+    useEffect(() => {
         // Función para manejar el evento de scroll
         const handleScroll = () => {
 
@@ -98,18 +100,24 @@ export function Navegador (){
                 setScrolling(false); // Si no, poner el estado como false
             }
         };
-    
+
         // Añadir el evento de scroll
         window.addEventListener('scroll', handleScroll);
-    
+
         // Limpiar el evento cuando el componente se desmonte
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, [location.pathname]); // El efecto solo se ejecuta una vez al montar el componente
-    
+    }, [location.pathname]); // El efecto solo se ejecuta una vez al montar el componente
 
-    return(
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen); // Alterna el estado
+    };
+
+    return (
         <>
             <nav id="navbar" className={scrolling ? styles['reducida'] : ''}>
                 <div className={styles.cont_logos}>
@@ -121,13 +129,13 @@ export function Navegador (){
                         <img src={pageDataToUse.enlace_logo_proyecto} alt="" />
                     </Link>
                 </div>
-                
-                <button id="boton_hamburguesa">
-                    <span className={styles['material-symbols-outlined']}>
+
+                <button onClick={toggleMenu}>
+                    <span className='material-symbols-outlined'>
                         menu
                     </span>
                 </button>
-                <ul id="menu">
+                <ul className={isOpen ? styles.menu_visible : styles.menu_hidden}>
                     <li><Link to={pageDataToUse.enlace_documentos} className={activeLink === '/documentos' || activeLink === '/documentos2' ? styles['active'] : ''}>Documentos</Link></li>
                     <li><Link to={pageDataToUse.enlace_proceso} className={activeLink === '/proceso' || activeLink === '/proceso2' ? styles['active'] : ''}>Proceso</Link></li>
                     <li><Link to={pageDataToUse.enlace_nosotros} className={activeLink === '/nosotros' || activeLink === '/nosotros2' ? styles['active'] : ''}>Nosotros</Link></li>

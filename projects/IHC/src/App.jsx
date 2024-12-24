@@ -18,7 +18,7 @@ const App = () => {
     <BrowserRouter basename="/LaunchLab">
       <Navegador></Navegador>
 
-      <main>
+      {/*<main>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/documentos" element={<Documentos />} />
@@ -36,7 +36,7 @@ const App = () => {
         </Routes>
       </main>
 
-      <Footer></Footer>
+      <Footer></Footer>*/}
     </BrowserRouter>
   );
 }

@@ -67,3 +67,12 @@ body.bg_AA{
 body.bg_LL{
     background-image: url('../imgs/Launch_VR/Background_Total.png'); /* Imagen de fondo */
 }
+
+@media only screen and (max-width: 1000px){
+    body{
+        background-size: 200%;
+        background-position: top left;
+        background-repeat: repeat;
+        height: 100vh;
+    }
+}
