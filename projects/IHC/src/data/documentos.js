@@ -10,41 +10,62 @@ const pageData = [[
         archivos: [
             {
                 id: 1,
+                nombre: "Descripción Alexis",
+                enlace_doc: `Descripcion_Alexis.png`,
+                imagen: `Descripcion_Alexis.png`,
+                tipo: "imagen"
+            },
+            {
+                id: 2,
                 nombre: "Persona Alexis",
                 enlace_doc: `Persona_Alexis.png`,
                 imagen: `Persona_Alexis.png`,
                 tipo: "imagen"
             },
             {
-                id: 2,
+                id: 3,
                 nombre: "Entrevista Alexis",
                 enlace_doc: "1jNpAW9ZsP1g_FfMNjQ6RaJSEJVlFvswE",
                 imagen: "",
                 tipo: "video"
             },
             {
-                id: 3,
+                id: 4,
+                nombre: "Descripción Karol",
+                enlace_doc: `Descripcion_Karol.png`,
+                imagen: `Descripcion_Karol.png`,
+                tipo: "imagen"
+            },
+            {
+                id: 5,
                 nombre: "Persona Karol",
                 enlace_doc: "Persona_Karol.png",
                 imagen: "Persona_Karol.png",
                 tipo: "imagen"
             },
             {
-                id: 4,
+                id: 6,
                 nombre: "Entrevista Karol",
                 enlace_doc: "1zHFy8TzBGFkQ2dqzZMer_Rfe4Uf1vCql",
                 imagen: "",
                 tipo: "video"
             },
             {
-                id: 5,
+                id: 7,
+                nombre: "Descripción Brenda",
+                enlace_doc: `Descripcion_Brenda.png`,
+                imagen: `Descripcion_Brenda.png`,
+                tipo: "imagen"
+            },
+            {
+                id: 8,
                 nombre: "Persona Brenda",
                 enlace_doc: "Persona_Brenda.png",
                 imagen: "Persona_Brenda.png",
                 tipo: "imagen"
             },
             {
-                id: 6,
+                id: 9,
                 nombre: "Entrevista Brenda",
                 enlace_doc: "17sSmdeDyOUKCZusEa6Ys4mytGDP4PxcM",
                 imagen: "",
