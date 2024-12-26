@@ -198,7 +198,7 @@ const pageData = [[
         ]
     },
     {
-        id_seccion: 6,
+        id_seccion: 7,
         titulo: "Capturas desarrollo de Videojuego",
         archivos: [
             {
