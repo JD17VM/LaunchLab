@@ -98,6 +98,27 @@ const pageData = [[
                 imagen: "",
                 tipo: "video"
             },
+            {
+                id: 4,
+                nombre: "Entrevista 3 (Profesor)",
+                enlace_doc: "1BCpKLzCp8XRYkIF0EEe4ncXEcQSSuaUU",
+                imagen: "",
+                tipo: "video"
+            },
+            {
+                id: 5,
+                nombre: "Entrevista 4",
+                enlace_doc: "1Ux6C8ZgKlcrbcK7b7cVP69PbHuJsV1ve",
+                imagen: "",
+                tipo: "video"
+            },
+            {
+                id: 6,
+                nombre: "Entrevista 5",
+                enlace_doc: "1__MHNs7jMPrPmPk-lbeTfoC_iSFVD5_g",
+                imagen: "",
+                tipo: "video"
+            },
         ]
     },
     {
