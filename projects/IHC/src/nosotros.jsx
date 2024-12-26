@@ -41,7 +41,7 @@ export function Nosotros() {
             </div>
           </div>
 
-          <div className={styles.integrante}>
+          {/*<div className={styles.integrante}>
             <img src={imageHelper.foto_Cuesta} alt="" />
             <div>
               <p>Bernardo Nicolás Cuesta Veratrini</p>
@@ -50,7 +50,7 @@ export function Nosotros() {
               <p>- Segundo Máximo Goleador Vigente Liga Peruana</p>
               <p>- Creador del Bernadocuestismo</p>
             </div>
-          </div>
+          </div>*/}
 
         </div>
 
