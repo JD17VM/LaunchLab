@@ -20,7 +20,7 @@ export function Proyectos() {
                     <div className={styles.contenido_seccion}>
                         <Link to="/" className={styles.cont_archivo} >
                             <div style={{ backgroundImage: `url(${imageHelper.background_image_LL_proyecto})` }}>
-                                <img src={imageHelper.logo_LaunchLab_blanco} alt=""/>
+                                <img src={imageHelper.logo_LaunchLab_blanco_nuevo} alt=""/>
                             </div>
                             <p>Launch Lab VR</p>
                         </Link>
@@ -29,7 +29,7 @@ export function Proyectos() {
                             <div style={{ backgroundImage: `url(${imageHelper.background_image_AA_proyecto})` }}>
                                 <img src={imageHelper.logo_ArrowAscend_fondoNegro} alt=""/>
                             </div>
-                            <p>Launch Lab VR</p>
+                            <p>Arrow Ascend</p>
                         </Link>
                     </div>
                 </div>
