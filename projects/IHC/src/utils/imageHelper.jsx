@@ -8,6 +8,7 @@ import imagen_LL_proceso_3 from '../assets/imgs/Launch_VR/Proceso/img3.jpg';
 
 import logo_IHC_normal from '../assets/imgs/logos/Logo_IHC_Normal.png';
 import logo_LaunchLab_blanco from '../assets/imgs/logos/Launch_Lab_Blanco.png';
+import logo_LaunchLab_blanco_nuevo from '../assets/imgs/logos/Launch_Lab_Blanco_Nueva_Version.png';
 import logo_ArrowAscend_fondoNegro from '../assets/imgs/logos/Logo_ArrowAscend_Fondo_Negro.png';
 
 import logoComputacionFondoNegro from '../assets/imgs/logos/Logo_Computacion_Fondo_Negro.png';
@@ -70,6 +71,7 @@ export default{
 
     "logo_IHC_normal": logo_IHC_normal,
     "logo_LaunchLab_blanco": logo_LaunchLab_blanco,
+    "logo_LaunchLab_blanco_nuevo": logo_LaunchLab_blanco_nuevo,
     "logo_ArrowAscend_fondoNegro": logo_ArrowAscend_fondoNegro,
     
     "logoComputacionFondoNegro": logoComputacionFondoNegro,

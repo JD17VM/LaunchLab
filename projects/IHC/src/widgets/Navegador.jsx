@@ -11,7 +11,7 @@ import imageHelper from '../utils/imageHelper'
 
 const pageData = [
     {
-        enlace_logo_proyecto: imageHelper.logo_LaunchLab_blanco,
+        enlace_logo_proyecto: imageHelper.logo_LaunchLab_blanco_nuevo,
         enlace_index: "/",
         enlace_documentos: "/documentos",
         enlace_proceso: "/proceso",
