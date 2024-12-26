@@ -21,7 +21,7 @@ const pageData = [
             {
                 nombre: "Primera Fase",
                 texto: "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
-                imagen: ""
+                imagen: imageHelper.capturas_grid_LL_3
             },
         ]
     },
@@ -29,13 +29,18 @@ const pageData = [
         lista_etapas: [
             {
                 nombre: "Creacion de la idea",
-                texto: "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
-                imagen: ""
+                texto: "Quisimos proporcionar una experiencia inmersiva y desafiante que combine diversión y destreza en un entorno de fantasía. Se concibe un juego de realidad virtual en el que el usuario, equipado con un arco y flechas, se enfrenta a dragones mientras recorre un mundo lleno de peligros y misterios, con el objetivo final de llegar a un imponente castillo.",
+                imagen: imageHelper.imagen_AA_proceso_1
             },
             {
-                nombre: "Creacion de la idea",
+                nombre: "Prototipo de Baja fidelidad",
+                texto: "Decidimos realizar un ejercicio de sketching para nuestro proyecto con el objetivo de recopilar, explorar y analizar diversas ideas de forma colaborativa, desarrollando una maqueta y simulando el juego. Este enfoque nos ayudó a visualizar conceptos que, de otra manera, podrían haberse perdido en discusiones abstractas o notas textuales.",
+                imagen: imageHelper.imagen_AA_proceso_2
+            },
+            {
+                nombre: "Primera Fase",
                 texto: "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
-                imagen: ""
+                imagen: imageHelper.imagen_AA_proceso_3
             },
         ]
     }

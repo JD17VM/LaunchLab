@@ -166,55 +166,54 @@ const pageData = [[
 [
     {
         id_seccion: 5,
-        titulo: "Documentos 1 -p2",
+        titulo: "Actividades",
         archivos: [
             {
                 id: 15,
-                nombre: "Nombre Archivo 1",
-                enlace_doc: "enlace 1",
+                nombre: "Actividad 04",
+                enlace_doc: "1-UFczRMb6wp3uxlEEOgG6c_FwJYtfQKH",
                 imagen: "",
-                tipo: "imagen"
+                tipo: "pdf"
             },
             {
                 id: 16,
-                nombre: "Nombre Archivo 2",
-                enlace_doc: "enlace 2",
+                nombre: "Actividad 05",
+                enlace_doc: "13c2DU2nhpyyLGiuPEkQqGaRL9LXQkalw",
                 imagen: "",
-                tipo: "imagen"
-            },
-            {
-                id: 17,
-                nombre: "Nombre Archivo 3",
-                enlace_doc: "enlace 3",
-                imagen: "",
-                tipo: "imagen"
-            },
-            {
-                id: 18,
-                nombre: "Nombre Archivo 4",
-                enlace_doc: "enlace 4",
-                imagen: "",
-                tipo: "imagen"
+                tipo: "pdf"
             },
         ]
     },
     {
         id_seccion: 6,
-        titulo: "Documento 2 -p2",
+        titulo: "Presentacion",
         archivos: [
             {
                 id: 19,
-                nombre: "Nombre Archivo 1",
-                enlace_doc: "enlace 1",
+                nombre: "Informe Juego",
+                enlace_doc: "1w5TYKp2MccM-7NieglJSOlJB_HhKnWEL",
                 imagen: "",
-                tipo: "imagen"
+                tipo: "pdf"
             },
+        ]
+    },
+    {
+        id_seccion: 6,
+        titulo: "Capturas desarrollo de Videojuego",
+        archivos: [
             {
                 id: 20,
-                nombre: "Nombre Archivo 2",
-                enlace_doc: "enlace 2",
+                nombre: "Imagen 1",
+                enlace_doc: "Captura_AA_Desarrollo_1.jpg",
                 imagen: "",
-                tipo: "imagen"
+                tipo: "img"
+            },
+            {
+                id: 21,
+                nombre: "Imagen 2",
+                enlace_doc: "Captura_AA_Desarrollo_2.jpg",
+                imagen: "",
+                tipo: "img"
             },
         ]
     },

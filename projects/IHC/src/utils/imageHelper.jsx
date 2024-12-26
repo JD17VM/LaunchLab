@@ -1,6 +1,6 @@
-import imagen_AA_proceso_1 from '../assets/imgs/Arrow_Ascend/Proceso/img1.png';
-import imagen_AA_proceso_2 from '../assets/imgs/Arrow_Ascend/Proceso/img2.jpg';
-import imagen_AA_proceso_3 from '../assets/imgs/Arrow_Ascend/Proceso/img3.jpg';
+import imagen_AA_proceso_1 from '../assets/imgs/Arrow_Ascend/Proceso/Img_idea.jpg';
+import imagen_AA_proceso_2 from '../assets/imgs/Arrow_Ascend/Proceso/Prototipo_Baja.jpg';
+import imagen_AA_proceso_3 from '../assets/imgs/Arrow_Ascend/Proceso/Primera_Prueba.png';
 
 import imagen_LL_proceso_1 from '../assets/imgs/Launch_VR/Proceso/img1.png';
 import imagen_LL_proceso_2 from '../assets/imgs/Launch_VR/Proceso/img2.jpg';
