@@ -205,15 +205,15 @@ const pageData = [[
                 id: 20,
                 nombre: "Imagen 1",
                 enlace_doc: "Captura_AA_Desarrollo_1.jpg",
-                imagen: "",
-                tipo: "img"
+                imagen: "Captura_AA_Desarrollo_1.jpg",
+                tipo: "imagen"
             },
             {
                 id: 21,
                 nombre: "Imagen 2",
                 enlace_doc: "Captura_AA_Desarrollo_2.jpg",
-                imagen: "",
-                tipo: "img"
+                imagen: "Captura_AA_Desarrollo_2.jpg",
+                tipo: "imagen"
             },
         ]
     },
