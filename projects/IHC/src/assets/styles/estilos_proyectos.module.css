@@ -95,4 +95,11 @@
             color: var(--color_blanco);
         }
 
+
+@media (max-width: 800px){
+    .contenido > .seccion > .contenido_seccion{
+        justify-content: center;
+    }
+
+}
         

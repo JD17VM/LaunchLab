@@ -182,6 +182,46 @@ const pageData = [[
             },
         ]
     },
+    {
+        id_seccion: 5,
+        titulo: "Primera Presentación",
+        archivos: [
+            {
+                id: 1,
+                nombre: "Etapa 0",
+                enlace_doc: "1x4jUwf94yLlRWhIKUnoE2cq9WgdCQ3TX",
+                imagen: "",
+                tipo: "pdf"
+            },
+        ]
+    },
+    {
+        id_seccion: 6,
+        titulo: "Presentación Final",
+        archivos: [
+            {
+                id: 1,
+                nombre: "Video Entrevista Usuario",
+                enlace_doc: "1cipri-dXmORdjrFZR7y4Y2XUYz9_yY7G",
+                imagen: "",
+                tipo: "video"
+            },
+            {
+                id: 2,
+                nombre: "Presentación Diapositivas",
+                enlace_doc: "1Ol2Mf_Bl2kpecbzXW69zIERw6RoXadAC",
+                imagen: "",
+                tipo: "pdf"
+            },
+            {
+                id: 3,
+                nombre: "Video Demostración - Interfaz",
+                enlace_doc: "1zoHfkFd0dl807S3VSAPxDH0OmPYtMGXi",
+                imagen: "",
+                tipo: "video"
+            },
+        ]
+    },
 ],
 
 [
