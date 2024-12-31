@@ -39,7 +39,7 @@ const pageData = [
             },
             {
                 nombre: "Primera Fase",
-                texto: "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula un laboratorio interactivo o un entorno natural, dependiendo del tema de física seleccionado. Aquí, tienen la oportunidad de explorar libremente, manipular objetos virtuales y observar cómo se comportan en relación con leyes básicas, como la gravedad, el movimiento o las fuerzas.",
+                texto: "En esta fase inicial, los usuarios ingresan a un escenario cuidadosamente diseñado que simula o un entorno natural en el bosque, donde el usuario podrá interactuar y seguir un camino hasta encontrar el objetivo final",
                 imagen: imageHelper.imagen_AA_proceso_3
             },
         ]

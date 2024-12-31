@@ -74,6 +74,7 @@
     }
 
     .contenedor_info > .barra_izquierda > .cont_corre > a{
+        
         padding: 0.5rem 0;
         display: flex;
         width:10rem;
@@ -83,6 +84,7 @@
         border: 2px solid white;
         color: white;
         transition: background-color 0.5s ease;
+        display: none;
     }
 
     .contenedor_info > .barra_izquierda > .cont_corre > a:hover{
